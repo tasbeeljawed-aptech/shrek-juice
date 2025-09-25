@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHREK JUICE CENTER</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Tumhari custom CSS (yahan tumhari purani file ka link do) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+<header class="d-flex align-items-center justify-content-between p-2 p-lg-3 bg-#2f4f2f">
+  <a href="#" class="text-white fw-bold fs-4 text-decoration-none">
+    <img src="logo/shrek_no_bg.png" alt="" style="height: 60px; width: 60px;">
+  </a>
+
+   <!-- Active Page Name (Mobile Only) -->
+   <div class="d-flex d-lg-none align-items-center w-100 px-3">
+    <!-- Left side -->
+    <span class="text-white fw-bold active">
+      Chocolate shakes
+    </span>
+  
+    <!-- Right side -->
+    <button class="btn btn-outline-light ms-auto" type="button"
+      data-bs-toggle="offcanvas" data-bs-target="#sideMenu" aria-controls="sideMenu">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+
+  <!-- Desktop Nav -->
+  <nav class="d-none d-lg-block">
+    <ul class="d-flex list-unstyled ms-auto">
+      <li class="px-1"><a href="index.html" class="text-c0a060 text-decoration-none">Home</a></li>
+      <li class="px-1"><a href="products.html" class="text-#c0a060 text-decoration-none active">Products & menus</a></li>
+      <li class="px-1"><a href="storelocation.html" class="text-#c0a060 text-decoration-none">Store Location</a></li>
+      <li class="px-1"><a href="frenchising.html" class="text-#c0a060 text-decoration-none">Franchising</a></li>
+      <li class="px-1"><a href="catering.html" class="text-#c0a060 text-decoration-none">Catering</a></li>
+      <li class="px-1"><a href="contact.html" class="text-#c0a060 text-decoration-none">Contact</a></li>
+      <li class="px-1"><a href="feedback.html" class="text-#c0a060 text-decoration-none">Feedback</a></li>
+      <li class="px-1"><a href="about.html" class="text-#c0a060 text-decoration-none">About Us</a></li>
+    </ul>
+  </nav>
+
+  
+
+  <!-- Sidebar Offcanvas -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="sideMenu" aria-labelledby="sideMenuLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="sideMenuLabel">Menu</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="list-unstyled">
+        <li><a href="index.html" class="d-block py-2 ">Home</a></li>
+        <li><a href="products.html" class="d-block py-2 active">Products & Menu</a></li>
+        <li><a href="storelocation.html" class="d-block py-2">Store Location</a></li>
+        <li><a href="frenchising.html" class="d-block py-2">Franchising</a></li>
+        <li><a href="catering.html" class="d-block py-2">Catering</a></li>
+        <li><a href="contact.html" class="d-block py-2">Contact</a></li>
+        <li><a href="feedback.html" class="d-block py-2">Feedback</a></li>
+        <li><a href="about.html" class="d-block py-2">About us</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+     <!-- product card -->
+      <!-- <h1>🍫 Chocolate Specials</h1> -->
+       <!-- Blurry Background Section -->
+<section class="blur-hero">
+  <div class="blur-bg"></div>
+  <div class="blur-content">
+    <h1>Chocolate Specials</h1>
+    <p>Fresh • Healthy • Natural</p>
+  </div>
+</section>
+
+ <div class="container my-5">
+  <div class="row g-4">
+    <!-- Choco Bliss -->
+    <div class="col-12 col-sm-6 col-lg-4">
+      <div class="card h-100 text-center">
+        <img src="chocolate img/choco Bliss.jpg" class="card-img-top" alt="Choco Bliss">
+        <div class="card-body">
+          <h5 class="card-title">Choco Bliss</h5>
+          <p class="card-text price">$5.99</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#chocoBlissModal">
+            View Details
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cocoa Crush -->
+    <div class="col-12 col-sm-6 col-lg-4">
+      <div class="card h-100 text-center">
+        <img src="chocolate img/Chocolate Chip Crunch Shake.png" class="card-img-top" alt="Cocoa Crush">
+        <div class="card-body">
+          <h5 class="card-title">Cocoa Crush</h5>
+          <p class="card-text price">$5.49</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cocoaCrushModal">
+            View Details
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Choco Burst -->
+    <div class="col-12 col-sm-6 col-lg-4">
+      <div class="card h-100 text-center">
+        <img src="chocolate img/Choco Brush.jpg" class="card-img-top" alt="Choco Burst">
+        <div class="card-body">
+          <h5 class="card-title">Choco Burst</h5>
+          <p class="card-text price">$5.79</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#chocoBurstModal">
+            View Details
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Choco Delight -->
+    <div class="col-12 col-sm-6 col-lg-4">
+      <div class="card h-100 text-center">
+        <img src="chocolate img/Dark Chocolate Decadence Shake.png" class="card-img-top" alt="Choco Delight">
+        <div class="card-body">
+          <h5 class="card-title">Choco Delight</h5>
+          <p class="card-text price">$6.29</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#chocoDelightModal">
+            View Details
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fudge Flow -->
+    <div class="col-12 col-sm-6 col-lg-4">
+      <div class="card h-100 text-center">
+        <img src="chocolate img/Mint Chocolate Mayhem Shake.png" class="card-img-top" alt="Fudge Flow">
+        <div class="card-body">
+          <h5 class="card-title">Fudge Flow</h5>
+          <p class="card-text price">$6.49</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#fudgeFlowModal">
+            View Details
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mocha Magic -->
+    <div class="col-12 col-sm-6 col-lg-4">
+      <div class="card h-100 text-center">
+        <img src="chocolate img/Caramel Chocolate Swirl Shake.png" class="card-img-top" alt="Mocha Magic">
+        <div class="card-body">
+          <h5 class="card-title">Mocha Magic</h5>
+          <p class="card-text price">$6.79</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mochaMagicModal">
+            View Details
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Previous Button -->
+<div class="previous-btn">
+  <button onclick="history.back()">⬅ Previous</button>
+</div>
+
+
+
+  <!-- Modals -->
+ <!-- Choco Bliss Modal -->
+<div class="modal fade" id="chocoBlissModal" tabindex="-1" aria-labelledby="chocoBlissModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="row g-0">
+        <!-- Left Image -->
+        <div class="col-md-5">
+          <img src="chocolate img/choco Bliss.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="Choco Bliss">
+        </div>
+        <!-- Right Content -->
+        <div class="col-md-7">
+          <div class="modal-header">
+            <h5 class="modal-title" id="chocoBlissModalLabel">Choco Bliss</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Description</h6>
+            <p>A rich and velvety chocolate drink that melts in your mouth with every sip.</p>
+            <div class="price fw-bold">$5.49</div>
+          </div>
+          <div class="modal-footer">
+            <a href="storelocation.html" class="btn btn-success">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Cocoa Crush Modal -->
+<div class="modal fade" id="cocoaCrushModal" tabindex="-1" aria-labelledby="cocoaCrushModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="row g-0">
+        <div class="col-md-5">
+          <img src="chocolate img/Chocolate Chip Crunch Shake.png" class="img-fluid h-100 w-100 object-fit-cover" alt="Cocoa Crush">
+        </div>
+        <div class="col-md-7">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cocoaCrushModalLabel">Cocoa Crush</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Description</h6>
+            <p>A creamy cocoa delight blended to perfection for chocolate lovers.</p>
+            <div class="price fw-bold">$5.29</div>
+          </div>
+          <div class="modal-footer">
+            <a href="storelocation.html" class="btn btn-success">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Choco Burst Modal -->
+<div class="modal fade" id="chocoBurstModal" tabindex="-1" aria-labelledby="chocoBurstModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="row g-0">
+        <div class="col-md-5">
+          <img src="chocolate img/Choco Brush.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="Choco Burst">
+        </div>
+        <div class="col-md-7">
+          <div class="modal-header">
+            <h5 class="modal-title" id="chocoBurstModalLabel">Choco Burst</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Description</h6>
+            <p>Indulge in an explosion of rich chocolate flavor with every sip.</p>
+            <div class="price fw-bold">$5.19</div>
+          </div>
+          <div class="modal-footer">
+            <a href="storelocation.html" class="btn btn-success">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Choco Delight Modal -->
+<div class="modal fade" id="chocoDelightModal" tabindex="-1" aria-labelledby="chocoDelightModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="row g-0">
+        <div class="col-md-5">
+          <img src="chocolate img/Dark Chocolate Decadence Shake.png" class="img-fluid h-100 w-100 object-fit-cover" alt="Choco Delight">
+        </div>
+        <div class="col-md-7">
+          <div class="modal-header">
+            <h5 class="modal-title" id="chocoDelightModalLabel">Choco Delight</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Description</h6>
+            <p>Smooth chocolate with a creamy finish, crafted for pure indulgence.</p>
+            <div class="price fw-bold">$5.39</div>
+          </div>
+          <div class="modal-footer">
+            <a href="storelocation.html" class="btn btn-success">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Fudge Flow Modal -->
+<div class="modal fade" id="fudgeFlowModal" tabindex="-1" aria-labelledby="fudgeFlowModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="row g-0">
+        <div class="col-md-5">
+          <img src="chocolate img/Mint Chocolate Mayhem Shake.png" class="img-fluid h-100 w-100 object-fit-cover" alt="Fudge Flow">
+        </div>
+        <div class="col-md-7">
+          <div class="modal-header">
+            <h5 class="modal-title" id="fudgeFlowModalLabel">Fudge Flow</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Description</h6>
+            <p>A flowing stream of chocolate fudge blended into a heavenly drink.</p>
+            <div class="price fw-bold">$5.59</div>
+          </div>
+          <div class="modal-footer">
+            <a href="storelocation.html" class="btn btn-success">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Mocha Magic Modal -->
+<div class="modal fade" id="mochaMagicModal" tabindex="-1" aria-labelledby="mochaMagicModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="row g-0">
+        <div class="col-md-5">
+          <img src="chocolate img/Caramel Chocolate Swirl Shake.png" class="img-fluid h-100 w-100 object-fit-cover" alt="Mocha Magic">
+        </div>
+        <div class="col-md-7">
+          <div class="modal-header">
+            <h5 class="modal-title" id="mochaMagicModalLabel">Mocha Magic</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Description</h6>
+            <p>A perfect mix of coffee and chocolate for a magical, energizing treat.</p>
+            <div class="price fw-bold">$5.69</div>
+          </div>
+          <div class="modal-footer">
+            <a href="storelocation.html" class="btn btn-success">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+      <!-- Footer -->
+   <footer class="footer">
+  <div class="footer-container">
+    
+    <!-- Column 1 -->
+    <div class="footer-col">
+      <h3>About Us</h3>
+      <p>
+        Shrek Juice brings you 100% fresh & healthy juices, smoothies, and shakes. 
+        Our mission is to keep you refreshed naturally.
+      </p>
+      <p>
+    Shrek Juice is more than just a juice bar — it’s a lifestyle choice for those who value health, freshness, and great taste. 
+    Since our beginning, we have been committed to serving 100% natural juices, smoothies, protein shakes, and mocktails made 
+    from hand-picked fruits and vegetables.  
+  </p>
+  
+    </div>
+
+    <!-- Column 2 -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <ul class="footer-links">
+         <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products & Menu</a></li>
+      <li><a href="storelocation.html">Store Location</a></li>
+      <li><a href="frenchising.html">Franchising</a></li>
+      <li><a href="catering.html">Catering</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      <li><a href="about.html">About us</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3 -->
+    <div class="footer-col">
+      <h3>Contact Us</h3>
+      <p><i class="bi bi-geo-alt-fill"></i>
+ Karachi, Pakistan</p>
+      <p><i class="bi bi-telephone-fill"></i> +92 300 1234567</p>
+      <p>✉️ info@juice.com</p>
+    </div>
+
+    <!-- Column 4 -->
+    <div class="footer-col">
+      <h3>Follow Us</h3>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    
+  </div>
+
+  <!-- Bottom -->
+  <div class="footer-bottom">
+    <p>© 2025 JUICE. All rights reserved.</p>
+  </div>
+</footer>
+
+
+<script>
+    function openModal(id) {
+      document.getElementById(id).classList.add("active");
+    }
+    function closeModal(id) {
+      document.getElementById(id).classList.remove("active");
+    }
+  </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

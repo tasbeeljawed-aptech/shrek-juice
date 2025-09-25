@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHREK JUICE CENTER</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Tumhari custom CSS (yahan tumhari purani file ka link do) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+<header class="d-flex align-items-center justify-content-between p-2 p-lg-3 bg-#2f4f2f">
+  <a href="#" class="text-white fw-bold fs-4 text-decoration-none">
+    <img src="logo/shrek_no_bg.png" alt="" style="height: 60px; width: 60px;">
+  </a>
+
+   <!-- Active Page Name (Mobile Only) -->
+   <div class="d-flex d-lg-none align-items-center w-100 px-3">
+    <!-- Left side -->
+    <span class="text-white fw-bold active">
+      Winter Menus
+    </span>
+  
+    <!-- Right side -->
+    <button class="btn btn-outline-light ms-auto" type="button"
+      data-bs-toggle="offcanvas" data-bs-target="#sideMenu" aria-controls="sideMenu">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+
+  <!-- Desktop Nav -->
+  <nav class="d-none d-lg-block">
+    <ul class="d-flex list-unstyled ms-auto">
+      <li class="px-1"><a href="index.html" class="text-c0a060 text-decoration-none ">Home</a></li>
+      <li class="px-1"><a href="products.html" class="text-#c0a060 text-decoration-none active">Products & menus</a></li>
+      <li class="px-1"><a href="storelocation.html" class="text-#c0a060 text-decoration-none">Store Location</a></li>
+      <li class="px-1"><a href="frenchising.html" class="text-#c0a060 text-decoration-none">Franchising</a></li>
+      <li class="px-1"><a href="catering.html" class="text-#c0a060 text-decoration-none">Catering</a></li>
+      <li class="px-1"><a href="contact.html" class="text-#c0a060 text-decoration-none">Contact</a></li>
+      <li class="px-1"><a href="feedback.html" class="text-#c0a060 text-decoration-none">Feedback</a></li>
+      <li class="px-1"><a href="about.html" class="text-#c0a060 text-decoration-none">About Us</a></li>
+    </ul>
+  </nav>
+
+ 
+</header>
+
+  <!-- Sidebar Offcanvas -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="sideMenu" aria-labelledby="sideMenuLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="sideMenuLabel">Menu</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="list-unstyled">
+        <li><a href="index.html" class="d-block py-2 ">Home</a></li>
+        <li><a href="products.html" class="d-block py-2 active">Products & Menu</a></li>
+        <li><a href="storelocation.html" class="d-block py-2">Store Location</a></li>
+        <li><a href="frenchising.html" class="d-block py-2">Franchising</a></li>
+        <li><a href="catering.html" class="d-block py-2">Catering</a></li>
+        <li><a href="contact.html" class="d-block py-2">Contact</a></li>
+        <li><a href="feedback.html" class="d-block py-2">Feedback</a></li>
+        <li><a href="about.html" class="d-block py-2">About us</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+    <!-- product card -->
+      <!-- <h1>❄️ Winter Specials</h1> -->
+       <!-- Blurry Background Section -->
+<section class="blur-hero">
+  <div class="blur-bg"></div>
+  <div class="blur-content">
+    <h1>Winter Specials</h1>
+    <p>Fresh • Healthy • Natural</p>
+  </div>
+</section>
+
+  <div class="container my-5">
+  <div class="row g-4">
+    <!-- Golden Glow -->
+    <div class="col-12 col-sm-6 col-lg-4">
+      <div class="card h-100 text-center">
+        <img src="winter img/Warm Pear Delight juice.jpg" class="card-img-top" alt="Golden Glow">
+        <div class="card-body">
+          <h5 class="card-title">Golden Glow</h5>
+          <p class="card-text price">$6.99</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#goldenGlowModal">
+            View Details
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Citrus Shield -->
+    <div class="col-12 col-sm-6 col-lg-4">
+      <div class="card h-100 text-center">
+        <img src="winter img/Citrus Shield .jpg" class="card-img-top" alt="Citrus Shield">
+        <div class="card-body">
+          <h5 class="card-title">Citrus Shield</h5>
+          <p class="card-text price">$6.49</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#citrusShieldModal">
+            View Details
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Vitamin C Zing -->
+    <div class="col-12 col-sm-6 col-lg-4">
+      <div class="card h-100 text-center">
+        <img src="winter img/Pear ginger juice.jpg" class="card-img-top" alt="Vitamin C Zing">
+        <div class="card-body">
+          <h5 class="card-title">Vitamin C Zing</h5>
+          <p class="card-text price">$6.79</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#vitaminCZingModal">
+            View Details
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Apple Cinnamon Warmth -->
+    <div class="col-12 col-sm-6 col-lg-4">
+      <div class="card h-100 text-center">
+        <img src="winter img/Apple Cinnamon Warmth juice.png" class="card-img-top" alt="Apple Cinnamon Warmth">
+        <div class="card-body">
+          <h5 class="card-title">Apple Cinnamon Warmth</h5>
+          <p class="card-text price">$7.29</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#appleCinnamonWarmthModal">
+            View Details
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Spiced Beet Elixir -->
+    <div class="col-12 col-sm-6 col-lg-4">
+      <div class="card h-100 text-center">
+        <img src="winter img/Pomegranate Hot Punch.png" class="card-img-top" alt="Spiced Beet Elixir">
+        <div class="card-body">
+          <h5 class="card-title">Spiced Beet Elixir</h5>
+          <p class="card-text price">$6.99</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#spicedBeetElixirModal">
+            View Details
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mulled Cranberry -->
+    <div class="col-12 col-sm-6 col-lg-4">
+      <div class="card h-100 text-center">
+        <img src="winter img/Mulled Cranberry.jpg" class="card-img-top" alt="Mulled Cranberry">
+        <div class="card-body">
+          <h5 class="card-title">Mulled Cranberry</h5>
+          <p class="card-text price">$7.49</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mulledCranberryModal">
+            View Details
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Previous Button -->
+<div class="previous-btn">
+  <button onclick="history.back()">⬅ Previous</button>
+</div>
+
+
+
+  <!-- Modals -->
+  <!-- Golden Glow Modal -->
+<div class="modal fade" id="goldenGlowModal" tabindex="-1" aria-labelledby="goldenGlowModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="row g-0">
+        <!-- Left side image -->
+        <div class="col-md-5">
+          <img src="winter img/Warm Pear Delight juice.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="Golden Glow">
+        </div>
+        <!-- Right side content -->
+        <div class="col-md-7">
+          <div class="modal-header">
+            <h5 class="modal-title" id="goldenGlowModalLabel">Golden Glow</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Description</h6>
+            <p>A soothing blend of turmeric, ginger, and citrus to keep you warm and glowing in the winter chill.</p>
+            <div class="price fw-bold">$4.99</div>
+          </div>
+          <div class="modal-footer">
+            <a href="storelocation.html" class="btn btn-success">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Citrus Shield Modal -->
+<div class="modal fade" id="citrusShieldModal" tabindex="-1" aria-labelledby="citrusShieldModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="row g-0">
+        <div class="col-md-5">
+          <img src="winter img/Citrus Shield .jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="Citrus Shield">
+        </div>
+        <div class="col-md-7">
+          <div class="modal-header">
+            <h5 class="modal-title" id="citrusShieldModalLabel">Citrus Shield</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Description</h6>
+            <p>Loaded with vitamin C from oranges, lemons, and grapefruit to boost your immunity during cold days.</p>
+            <div class="price fw-bold">$4.49</div>
+          </div>
+          <div class="modal-footer">
+            <a href="storelocation.html" class="btn btn-success">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Vitamin C Zing Modal -->
+<div class="modal fade" id="vitaminCZingModal" tabindex="-1" aria-labelledby="vitaminCZingModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="row g-0">
+        <div class="col-md-5">
+          <img src="winter img/Pear ginger juice.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="Vitamin C Zing">
+        </div>
+        <div class="col-md-7">
+          <div class="modal-header">
+            <h5 class="modal-title" id="vitaminCZingModalLabel">Vitamin C Zing</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Description</h6>
+            <p>A tangy mix of kiwi, pineapple, and lime, giving you a refreshing vitamin C kick this winter.</p>
+            <div class="price fw-bold">$4.29</div>
+          </div>
+          <div class="modal-footer">
+            <a href="storelocation.html" class="btn btn-success">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Apple Cinnamon Warmth Modal -->
+<div class="modal fade" id="appleCinnamonWarmthModal" tabindex="-1" aria-labelledby="appleCinnamonWarmthModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="row g-0">
+        <div class="col-md-5">
+          <img src="winter img/Apple Cinnamon Warmth juice.png" class="img-fluid h-100 w-100 object-fit-cover" alt="Apple Cinnamon Warmth">
+        </div>
+        <div class="col-md-7">
+          <div class="modal-header">
+            <h5 class="modal-title" id="appleCinnamonWarmthModalLabel">Apple Cinnamon Warmth</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Description</h6>
+            <p>Sweet apples blended with a touch of cinnamon spice for that cozy winter warmth.</p>
+            <div class="price fw-bold">$4.79</div>
+          </div>
+          <div class="modal-footer">
+            <a href="storelocation.html" class="btn btn-success">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Spiced Beet Elixir Modal -->
+<div class="modal fade" id="spicedBeetElixirModal" tabindex="-1" aria-labelledby="spicedBeetElixirModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="row g-0">
+        <div class="col-md-5">
+          <img src="winter img/Pomegranate Hot Punch.png" class="img-fluid h-100 w-100 object-fit-cover" alt="Spiced Beet Elixir">
+        </div>
+        <div class="col-md-7">
+          <div class="modal-header">
+            <h5 class="modal-title" id="spicedBeetElixirModalLabel">Spiced Beet Elixir</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Description</h6>
+            <p>Beetroot, ginger, and spices combined into a bold winter elixir to fuel your day.</p>
+            <div class="price fw-bold">$4.99</div>
+          </div>
+          <div class="modal-footer">
+            <a href="storelocation.html" class="btn btn-success">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Mulled Cranberry Modal -->
+<div class="modal fade" id="mulledCranberryModal" tabindex="-1" aria-labelledby="mulledCranberryModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="row g-0">
+        <div class="col-md-5">
+          <img src="winter img/Mulled Cranberry.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="Mulled Cranberry">
+        </div>
+        <div class="col-md-7">
+          <div class="modal-header">
+            <h5 class="modal-title" id="mulledCranberryModalLabel">Mulled Cranberry</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Description</h6>
+            <p>Tart cranberries simmered with warm spices to give you that classic holiday flavor.</p>
+            <div class="price fw-bold">$4.59</div>
+          </div>
+          <div class="modal-footer">
+            <a href="storelocation.html" class="btn btn-success">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+      <!-- Footer -->
+    <footer class="footer">
+  <div class="footer-container">
+    
+    <!-- Column 1 -->
+    <div class="footer-col">
+      <h3>About Us</h3>
+      <p>
+        Shrek Juice brings you 100% fresh & healthy juices, smoothies, and shakes. 
+        Our mission is to keep you refreshed naturally.
+      </p>
+      <p>
+    Shrek Juice is more than just a juice bar — it’s a lifestyle choice for those who value health, freshness, and great taste. 
+    Since our beginning, we have been committed to serving 100% natural juices, smoothies, protein shakes, and mocktails made 
+    from hand-picked fruits and vegetables.  
+  </p>
+  
+    </div>
+
+    <!-- Column 2 -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <ul class="footer-links">
+         <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products & Menu</a></li>
+      <li><a href="storelocation.html">Store Location</a></li>
+      <li><a href="frenchising.html">Franchising</a></li>
+      <li><a href="catering.html">Catering</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      <li><a href="about.html">About us</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3 -->
+    <div class="footer-col">
+      <h3>Contact Us</h3>
+      <p><i class="bi bi-geo-alt-fill"></i>
+ Karachi, Pakistan</p>
+      <p><i class="bi bi-telephone-fill"></i> +92 300 1234567</p>
+      <p>✉️ info@juice.com</p>
+    </div>
+
+    <!-- Column 4 -->
+    <div class="footer-col">
+      <h3>Follow Us</h3>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    
+  </div>
+
+  <!-- Bottom -->
+  <div class="footer-bottom">
+    <p>© 2025 JUICE. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+    function openModal(id) {
+      document.getElementById(id).classList.add("active");
+    }
+    function closeModal(id) {
+      document.getElementById(id).classList.remove("active");
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

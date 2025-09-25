@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHREK JUICE CENTER</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Tumhari custom CSS (yahan tumhari purani file ka link do) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+<header class="d-flex align-items-center justify-content-between p-2 p-lg-3 bg-#2f4f2f">
+  <a href="#" class="text-white fw-bold fs-4 text-decoration-none">
+    <img src="logo/shrek_no_bg.png" alt="" style="height: 60px; width: 60px;">
+  </a>
+
+  <!-- Active Page Name (Mobile Only) -->
+  <div class="d-flex d-lg-none align-items-center w-100 px-3">
+    <!-- Left side -->
+    <span class="text-white fw-bold active">
+      Catering
+    </span>
+  
+    <!-- Right side -->
+    <button class="btn btn-outline-light ms-auto" type="button"
+      data-bs-toggle="offcanvas" data-bs-target="#sideMenu" aria-controls="sideMenu">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+
+  <!-- Desktop Nav -->
+  <nav class="d-none d-lg-block">
+    <ul class="d-flex list-unstyled ms-auto">
+      <li class="px-1"><a href="index.html" class="text-c0a060 text-decoration-none">Home</a></li>
+      <li class="px-1"><a href="products.html" class="text-#c0a060 text-decoration-none">Products & menus</a></li>
+      <li class="px-1"><a href="storelocation.html" class="text-#c0a060 text-decoration-none">Store Location</a></li>
+      <li class="px-1"><a href="frenchising.html" class="text-#c0a060 text-decoration-none">Franchising</a></li>
+      <li class="px-1"><a href="catering.html" class="text-#c0a060 text-decoration-none active">Catering</a></li>
+      <li class="px-1"><a href="contact.html" class="text-#c0a060 text-decoration-none">Contact</a></li>
+      <li class="px-1"><a href="feedback.html" class="text-#c0a060 text-decoration-none">Feedback</a></li>
+      <li class="px-1"><a href="about.html" class="text-#c0a060 text-decoration-none">About Us</a></li>
+    </ul>
+  </nav>
+
+  
+</header>
+
+  <!-- Sidebar Offcanvas -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="sideMenu" aria-labelledby="sideMenuLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="sideMenuLabel">Menu</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="list-unstyled">
+        <li><a href="index.html" class="d-block py-2">Home</a></li>
+        <li><a href="products.html" class="d-block py-2">Products & Menu</a></li>
+        <li><a href="storelocation.html" class="d-block py-2">Store Location</a></li>
+        <li><a href="frenchising.html" class="d-block py-2">Franchising</a></li>
+        <li><a href="catering.html" class="d-block py-2 active">Catering</a></li>
+        <li><a href="contact.html" class="d-block py-2">Contact</a></li>
+        <li><a href="feedback.html" class="d-block py-2">Feedback</a></li>
+        <li><a href="about.html" class="d-block py-2">About us</a></li>
+      </ul>
+    </div>
+  </div>
+
+<!-- catering -->
+ <!-- Blurry Background Section -->
+<section class="blur-hero">
+  <div class="blur-bg"></div>
+  <div class="blur-content">
+    <h1>Our Catering Services</h1>
+    <p>Specially crafted juice catering for parties, weddings, and corporate events. Fresh, natural, and served with love.</p>
+  </div>
+</section>
+<div class="catering-container">
+  <!-- <h1>Our Catering Services</h1>
+  <p>Specially crafted juice catering for parties, weddings, and corporate events. Fresh, natural, and served with love.</p> -->
+
+  <div class="catering-grid">
+    <img src="catering img/catering1.jpeg" alt="Catering 1" class="catering-img">
+    <img src="catering img/catering2.jpeg" alt="Catering 2" class="catering-img">
+    <img src="catering img/catering 3.jpeg" alt="Catering 3" class="catering-img">
+    <img src="catering img/catering 9.jpeg" alt="Catering 4" class="catering-img">
+    <img src="catering img/catering 7.jpeg" alt="Catering 5" class="catering-img">
+    <img src="catering img/catering 8.jpeg" alt="Catering 6" class="catering-img">
+  </div>
+</div>
+
+<!-- Modal (single, reusable for all images) -->
+<div id="myModal" class="modal2">
+  <span class="close">&times;</span>
+  <div class="modal2-content">
+    <img id="modalImage" src="" alt="Juice Image">
+    <a href="storelocation.html"><button>Contact Us</button></a>
+  </div>
+</div>
+
+
+<footer class="footer">
+  <div class="footer-container">
+    
+    <!-- Column 1 -->
+    <div class="footer-col">
+      <h3>About Us</h3>
+      <p>
+        Shrek Juice brings you 100% fresh & healthy juices, smoothies, and shakes. 
+        Our mission is to keep you refreshed naturally.
+      </p>
+      <p>
+    Shrek Juice is more than just a juice bar — it’s a lifestyle choice for those who value health, freshness, and great taste. 
+    Since our beginning, we have been committed to serving 100% natural juices, smoothies, protein shakes, and mocktails made 
+    from hand-picked fruits and vegetables.  
+  </p>
+  
+    </div>
+
+    <!-- Column 2 -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <ul class="footer-links">
+         <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products & Menu</a></li>
+      <li><a href="storelocation.html">Store Location</a></li>
+      <li><a href="frenchising.html">Franchising</a></li>
+      <li><a href="#" class="active">Catering</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      <li><a href="about.html">About us</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3 -->
+    <div class="footer-col">
+      <h3>Contact Us</h3>
+      <p><i class="bi bi-geo-alt-fill"></i>
+ Karachi, Pakistan</p>
+      <p><i class="bi bi-telephone-fill"></i> +92 300 1234567</p>
+      <p>✉️ info@juice.com</p>
+    </div>
+
+    <!-- Column 4 -->
+    <div class="footer-col">
+      <h3>Follow Us</h3>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    
+  </div>
+
+  <!-- Bottom -->
+  <div class="footer-bottom">
+    <p>© 2025 JUICE. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- <script src="script.js"></script> -->
+ <script>
+  // Active nav highlight
+  document.addEventListener("DOMContentLoaded", () => {
+    let current = window.location.pathname.split("/").pop(); 
+    if (current === "") current = "index.html"; // agar root page ho to home
+
+    document.querySelectorAll("nav a").forEach(link => {
+      let href = link.getAttribute("href").split("/").pop();
+
+      if (href === current) {
+        link.classList.add("active");
+      }
+    });
+  });
+</script>
+ <script>
+  // modal elements
+  const modal = document.getElementById("myModal");
+  const modalImg = document.getElementById("modalImage");
+  const closeBtn = document.querySelector(".close");
+
+  // all images
+  const images = document.querySelectorAll(".catering-img");
+
+  // har image pe click event
+  images.forEach(img => {
+    img.addEventListener("click", () => {
+      modal.style.display = "flex"; // modal show
+      modalImg.src = img.src;       // clicked image ka src set karo
+      modalImg.alt = img.alt;
+    });
+  });
+
+  // close modal
+  closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  // backdrop click pe close
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

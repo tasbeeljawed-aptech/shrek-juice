@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHREK JUICE CENTER</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Tumhari custom CSS (yahan tumhari purani file ka link do) -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Custom CSS -->
+<!-- <style>
+  /* Image size control */
+  .custom-img {
+    /* width: 300px;  width kam */
+    height: 100px; /* height kam */
+    object-fit: fill;
+  }
+
+  /* Mobile fix for close button */
+  @media (max-width: 576px) {
+    .btn-close {
+      z-index: 1056; /* upar sab pe rahe */
+    }
+  }
+</style> -->
+</head>
+<body>
+
+  <!-- Header -->
+<header class="d-flex align-items-center justify-content-between p-2 p-lg-3 bg-#2f4f2f">
+  <a href="#" class="text-white fw-bold fs-4 text-decoration-none">
+    <img src="logo/shrek_no_bg.png" alt="" style="height: 60px; width: 60px;">
+  </a>
+
+  <!-- Active Page Name (Mobile Only) -->
+  <div class="d-flex d-lg-none align-items-center w-100 px-3">
+    <!-- Left side -->
+    <span class="text-white fw-bold active">
+      Fruit Juices
+    </span>
+  
+    <!-- Right side -->
+    <button class="btn btn-outline-light ms-auto" type="button"
+      data-bs-toggle="offcanvas" data-bs-target="#sideMenu" aria-controls="sideMenu">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+
+  <!-- Desktop Nav -->
+  <nav class="d-none d-lg-block">
+    <ul class="d-flex list-unstyled ms-auto">
+      <li class="px-1"><a href="index.html" class="text-c0a060 text-decoration-none">Home</a></li>
+      <li class="px-1"><a href="products.html" class="text-#c0a060 text-decoration-none active">Products & menus</a></li>
+      <li class="px-1"><a href="storelocation.html" class="text-#c0a060 text-decoration-none">Store Location</a></li>
+      <li class="px-1"><a href="frenchising.html" class="text-#c0a060 text-decoration-none">Franchising</a></li>
+      <li class="px-1"><a href="catering.html" class="text-#c0a060 text-decoration-none">Catering</a></li>
+      <li class="px-1"><a href="contact.html" class="text-#c0a060 text-decoration-none">Contact</a></li>
+      <li class="px-1"><a href="feedback.html" class="text-#c0a060 text-decoration-none">Feedback</a></li>
+      <li class="px-1"><a href="about.html" class="text-#c0a060 text-decoration-none">About Us</a></li>
+    </ul>
+  </nav>
+
+  
+</header>
+
+  <!-- Sidebar Offcanvas -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="sideMenu" aria-labelledby="sideMenuLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="sideMenuLabel">Menu</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="list-unstyled">
+        <li><a href="index.html" class="d-block py-2">Home</a></li>
+        <li><a href="products.html" class="d-block py-2 active">Products & Menu</a></li>
+        <li><a href="storelocation.html" class="d-block py-2">Store Location</a></li>
+        <li><a href="frenchising.html" class="d-block py-2">Franchising</a></li>
+        <li><a href="catering.html" class="d-block py-2">Catering</a></li>
+        <li><a href="contact.html" class="d-block py-2">Contact</a></li>
+        <li><a href="feedback.html" class="d-block py-2">Feedback</a></li>
+        <li><a href="about.html" class="d-block py-2">About us</a></li>
+      </ul>
+    </div>
+  </div>
+
+    <!-- product card -->
+    <!-- <h1>🍹 Fresh Fruit Juices </h1> -->
+     <!-- Blurry Background Section -->
+<section class="blur-hero">
+  <div class="blur-bg"></div>
+  <div class="blur-content">
+    <h1>Fresh Fruit Juices</h1>
+    <p>Fresh • Healthy • Natural</p>
+  </div>
+</section>
+
+<!-- Product Section -->
+<section class="container my-5">
+  
+  
+  <div class="row g-4">
+    <!-- Apple Juice -->
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="card">
+        <img src="fruits img/apple juice.jpg" alt="Apple Juice">
+        <h2>Apple Juice</h2>
+        <div class="price">$3.99</div>
+        <!-- <a href="#" class="btn" onclick="openModal('appleModal')">View Details</a> -->
+        <!-- Button to Open Modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#appleModal">
+  View Details
+</button>
+      </div>
+    </div>
+
+    <!-- Grapes Juice -->
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="card">
+        <img src="fruits img/grape juice.jpg" alt="Grapes Juice">
+        <h2>Grapes Juice</h2>
+        <div class="price">$4.79</div>
+        <!-- <a href="#" class="btn" onclick="openModal('grapesModal')">View Details</a> -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#grapesModal">
+  View Details
+</button>
+      </div>
+    </div>
+
+    <!-- Pineapple Juice -->
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="card">
+        <img src="fruits img/pineapple.jpg" alt="Pineapple Juice">
+        <h2>Pineapple Juice</h2>
+        <div class="price">$4.49</div>
+        <!-- <a href="#" class="btn" onclick="openModal('pineappleModal')">View Details</a> -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pineappleModal">
+  View Details
+</button>
+      </div>
+    </div>
+
+    <!-- Cherry Juice -->
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="card">
+        <img src="fruits img/cherry juice.jpg" alt="Cherry Juice">
+        <h2>Cherry Juice</h2>
+        <div class="price">$5.29</div>
+        <!-- <a href="#" class="btn" onclick="openModal('cherryModal')">View Details</a> -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cherryModal">
+  View Details
+</button>
+      </div>
+    </div>
+
+    <!-- Pomegranate Juice -->
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="card">
+        <img src="fruits img/pomegrante juice.jpg" alt="Pomegranate Juice">
+        <h2>Pomegranate Juice</h2>
+        <div class="price">$5.79</div>
+        <!-- <a href="#" class="btn" onclick="openModal('pomegranateModal')">View Details</a> -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pomegranateModal">
+  View Details
+</button>
+      </div>
+    </div>
+
+    <!-- Orange Juice -->
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="card">
+        <img src="fruits img/orange juice.jpg" alt="Orange Juice">
+        <h2>Orange Juice</h2>
+        <div class="price">$3.49</div>
+        <!-- <a href="#" class="btn" onclick="openModal('orangeModal')">View Details</a> -->
+         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#orangeModal">
+  View Details
+</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Previous Button -->
+<div class="previous-btn">
+  <button onclick="history.back()">⬅ Previous</button>
+</div>
+
+
+
+<!-- apple Modal -->
+<div class="modal fade" id="appleModal" tabindex="-1" aria-labelledby="appleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="row g-0">
+        <!-- Left side image -->
+        <div class="col-md-5">
+          <img src="fruits img/apple juice.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="Apple Juice">
+        </div>
+
+        <!-- Right side content -->
+        <div class="col-md-7">
+          <div class="modal-header">
+            <h5 class="modal-title" id="appleModalLabel">Apple Juice</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Description</h6>
+            <p>
+              Our apple juice is made from the finest, sun-ripened apples, freshly pressed to capture their natural sweetness and crisp flavor.
+              Every glass is rich in essential vitamins, antioxidants, and dietary fiber...
+            </p>
+            <div class="price fw-bold">$3.99</div>
+          </div>
+          <div class="modal-footer">
+            <a href="storelocation.html" class="btn btn-success">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <!-- Grapes Juice Modal -->
+  <div class="modal fade" id="grapesModal" tabindex="-1" aria-labelledby="appleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="row g-0">
+        <!-- Left side image -->
+        <div class="col-md-5">
+          <img src="fruits img/grape juice.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="Grapes Juice">
+        </div>
+
+        <!-- Right side content -->
+        <div class="col-md-7">
+          <div class="modal-header">
+            <h5 class="modal-title" id="grapesModalLabel">Grapes Juice</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Description</h6>
+            <p>
+              Our apple juice is made from the finest, sun-ripened apples, freshly pressed to capture their natural sweetness and crisp flavor.
+              Every glass is rich in essential vitamins, antioxidants, and dietary fiber...
+            </p>
+            <div class="price fw-bold">$3.99</div>
+          </div>
+          <div class="modal-footer">
+            <a href="storelocation.html" class="btn btn-success">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Pineapple Modal -->
+<div class="modal fade" id="pineappleModal" tabindex="-1" aria-labelledby="pineappleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="row g-0">
+        <!-- Left side image -->
+        <div class="col-md-5">
+          <img src="fruits img/pineapple.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="Pineapple Juice">
+        </div>
+
+        <!-- Right side content -->
+        <div class="col-md-7">
+          <div class="modal-header">
+            <h5 class="modal-title" id="pineappleModalLabel">Pineapple Juice</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Description</h6>
+            <p>
+              Our pineapple juice is made from the juiciest tropical pineapples, freshly pressed to lock in their tangy-sweet flavor and refreshing aroma. 
+              Rich in vitamin C, manganese, and natural enzymes like bromelain, it not only boosts immunity but also aids digestion and promotes overall wellness. 
+              With no artificial colors or preservatives, it’s pure tropical goodness in every sip.
+            </p>
+            <div class="price fw-bold">$4.49</div>
+          </div>
+          <div class="modal-footer">
+            <a href="storelocation.html" class="btn btn-success">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Cherry Modal -->
+<div class="modal fade" id="cherryModal" tabindex="-1" aria-labelledby="cherryModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="row g-0">
+        <!-- Left side image -->
+        <div class="col-md-5">
+          <img src="fruits img/cherry juice.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="Cherry Juice">
+        </div>
+
+        <!-- Right side content -->
+        <div class="col-md-7">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cherryModalLabel">Cherry Juice</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Description</h6>
+            <p>
+              Refresh your day with our cherry juice, made from ripe, juicy cherries that deliver a naturally sweet and tangy taste. Packed with antioxidants and vitamins, it’s both delicious and nutritious.
+            </p>
+            <div class="price fw-bold">$4.49</div>
+          </div>
+          <div class="modal-footer">
+            <a href="storelocation.html" class="btn btn-success">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Pomegranate Modal -->
+<div class="modal fade" id="pomegranateModal" tabindex="-1" aria-labelledby="pomegranateModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="row g-0">
+        <!-- Left side image -->
+        <div class="col-md-5">
+          <img src="fruits img/pomegrante juice.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="Pomegranate Juice">
+        </div>
+
+        <!-- Right side content -->
+        <div class="col-md-7">
+          <div class="modal-header">
+            <h5 class="modal-title" id="pomegranateModalLabel">Pomegranate Juice</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Description</h6>
+            <p>
+              Experience the rich, bold flavor of our pomegranate juice, crafted from freshly pressed pomegranate seeds. A powerhouse of antioxidants and nutrients that support your well-being.
+            </p>
+            <div class="price fw-bold">$5.49</div>
+          </div>
+          <div class="modal-footer">
+            <a href="storelocation.html" class="btn btn-success">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Orange Modal -->
+<div class="modal fade" id="orangeModal" tabindex="-1" aria-labelledby="orangeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="row g-0">
+        <!-- Left side image -->
+        <div class="col-md-5">
+          <img src="fruits img/orange juice.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="Orange Juice">
+        </div>
+
+        <!-- Right side content -->
+        <div class="col-md-7">
+          <div class="modal-header">
+            <h5 class="modal-title" id="orangeModalLabel">Orange Juice</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Description</h6>
+            <p>
+              Enjoy the classic taste of freshly squeezed orange juice, bursting with natural citrus flavor and loaded with vitamin C to energize your body every morning.
+            </p>
+            <div class="price fw-bold">$3.49</div>
+          </div>
+          <div class="modal-footer">
+            <a href="storelocation.html" class="btn btn-success">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- footer -->
+  <footer class="footer">
+  <div class="footer-container">
+    
+    <!-- Column 1 -->
+    <div class="footer-col">
+      <h3>About Us</h3>
+      <p>
+        Shrek Juice brings you 100% fresh & healthy juices, smoothies, and shakes. 
+        Our mission is to keep you refreshed naturally.
+      </p>
+      <p>
+    Shrek Juice is more than just a juice bar — it’s a lifestyle choice for those who value health, freshness, and great taste. 
+    Since our beginning, we have been committed to serving 100% natural juices, smoothies, protein shakes, and mocktails made 
+    from hand-picked fruits and vegetables.  
+  </p>
+  
+    </div>
+
+    <!-- Column 2 -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <ul class="footer-links">
+         <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products & Menu</a></li>
+      <li><a href="storelocation.html">Store Location</a></li>
+      <li><a href="frenchising.html">Franchising</a></li>
+      <li><a href="catering.html">Catering</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      <li><a href="about.html">About us</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3 -->
+    <div class="footer-col">
+      <h3>Contact Us</h3>
+      <p><i class="bi bi-geo-alt-fill"></i>
+ Karachi, Pakistan</p>
+      <p><i class="bi bi-telephone-fill"></i> +92 300 1234567</p>
+      <p>✉️ info@juice.com</p>
+    </div>
+
+    <!-- Column 4 -->
+    <div class="footer-col">
+      <h3>Follow Us</h3>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    
+  </div>
+
+  <!-- Bottom -->
+  <div class="footer-bottom">
+    <p>© 2025 JUICE. All rights reserved.</p>
+  </div>
+</footer>
+
+
+<script>
+
+const closeBtn = document.querySelector(".btn-close");
+
+
+
+  // Close modal (cross button se)
+closeBtn.addEventListener("click", () => {
+  modal.style.display = "none";
+});
+
+// Bahar click karne se bhi band ho jaye
+window.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    modal.style.display = "none";
+  }
+});
+</script>
+
+
+ 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

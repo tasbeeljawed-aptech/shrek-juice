@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHREK JUICE CENTER</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Tumhari custom CSS (yahan tumhari purani file ka link do) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+<header class="d-flex align-items-center justify-content-between p-2 p-lg-3 bg-#2f4f2f">
+  <a href="#" class="text-white fw-bold fs-4 text-decoration-none">
+    <img src="logo/shrek_no_bg.png" alt="" style="height: 60px; width: 60px;">
+  </a>
+
+  <!-- Active Page Name (Mobile Only) -->
+  <div class="d-flex d-lg-none align-items-center w-100 px-3">
+    <!-- Left side -->
+    <span class="text-white fw-bold active">
+      Smoothiest
+    </span>
+  
+    <!-- Right side -->
+    <button class="btn btn-outline-light ms-auto" type="button"
+      data-bs-toggle="offcanvas" data-bs-target="#sideMenu" aria-controls="sideMenu">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+
+  <!-- Desktop Nav -->
+  <nav class="d-none d-lg-block">
+    <ul class="d-flex list-unstyled ms-auto">
+      <li class="px-1"><a href="index.html" class="text-c0a060 text-decoration-none">Home</a></li>
+      <li class="px-1"><a href="products.html" class="text-#c0a060 text-decoration-none active">Products & menus</a></li>
+      <li class="px-1"><a href="storelocation.html" class="text-#c0a060 text-decoration-none">Store Location</a></li>
+      <li class="px-1"><a href="frenchising.html" class="text-#c0a060 text-decoration-none">Franchising</a></li>
+      <li class="px-1"><a href="catering.html" class="text-#c0a060 text-decoration-none">Catering</a></li>
+      <li class="px-1"><a href="contact.html" class="text-#c0a060 text-decoration-none">Contact</a></li>
+      <li class="px-1"><a href="feedback.html" class="text-#c0a060 text-decoration-none">Feedback</a></li>
+      <li class="px-1"><a href="about.html" class="text-#c0a060 text-decoration-none">About Us</a></li>
+    </ul>
+  </nav>
+
+  
+</header>
+
+  <!-- Sidebar Offcanvas -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="sideMenu" aria-labelledby="sideMenuLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="sideMenuLabel">Menu</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="list-unstyled">
+        <li><a href="index.html" class="d-block py-2 ">Home</a></li>
+        <li><a href="products.html" class="d-block py-2 active">Products & Menu</a></li>
+        <li><a href="storelocation.html" class="d-block py-2">Store Location</a></li>
+        <li><a href="frenchising.html" class="d-block py-2">Franchising</a></li>
+        <li><a href="catering.html" class="d-block py-2">Catering</a></li>
+        <li><a href="contact.html" class="d-block py-2">Contact</a></li>
+        <li><a href="feedback.html" class="d-block py-2">Feedback</a></li>
+        <li><a href="about.html" class="d-block py-2">About us</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+    <!-- product card -->
+      <!-- <h1>🥤 Fresh Smoothies</h1> -->
+       <!-- Blurry Background Section -->
+<section class="blur-hero">
+  <div class="blur-bg"></div>
+  <div class="blur-content">
+    <h1>Fresh Smoothies</h1>
+    <p>Fresh • Healthy • Natural</p>
+  </div>
+</section>
+
+ <div class="container my-5">
+  
+
+  <div class="row g-4">
+    <!-- Mango Madness -->
+    <div class="col-12 col-sm-6 col-lg-4">
+      <div class="card h-100 text-center">
+        <img src="smothiest img/Mango Smothie.jpg" class="card-img-top" alt="Mango Madness">
+        <div class="card-body">
+          <h2 class="card-title h5">Mango Madness</h2>
+          <div class="price mb-2">$5.49</div>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mangoModal">
+            View Details
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Very Berry Coconut -->
+    <div class="col-12 col-sm-6 col-lg-4">
+      <div class="card h-100 text-center">
+        <img src="smothiest img/verryBerry Smothie.jpg" class="card-img-top" alt="Very Berry Coconut Smoothie">
+        <div class="card-body">
+          <h2 class="card-title h5">Very Berry Coconut</h2>
+          <div class="price mb-2">$5.99</div>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#berryCoconutModal">
+            View Details
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Strawberry Kiwi -->
+    <div class="col-12 col-sm-6 col-lg-4">
+      <div class="card h-100 text-center">
+        <img src="smothiest img/BlueBerry Smothie.jpg" class="card-img-top" alt="Strawberry Kiwi Smoothie">
+        <div class="card-body">
+          <h2 class="card-title h5">Strawberry Kiwi</h2>
+          <div class="price mb-2">$5.79</div>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#strawberryKiwiModal">
+            View Details
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Banana-Berry -->
+    <div class="col-12 col-sm-6 col-lg-4">
+      <div class="card h-100 text-center">
+        <img src="smothiest img/banana berry.jpg" class="card-img-top" alt="Banana-Berry Smoothie">
+        <div class="card-body">
+          <h2 class="card-title h5">Banana-Berry</h2>
+          <div class="price mb-2">$5.29</div>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bananaBerryModal">
+            View Details
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tropical Twist -->
+    <div class="col-12 col-sm-6 col-lg-4">
+      <div class="card h-100 text-center">
+        <img src="smothiest img/Avocado Smothie.jpg" class="card-img-top" alt="Tropical Twist">
+        <div class="card-body">
+          <h2 class="card-title h5">Tropical Twist</h2>
+          <div class="price mb-2">$6.29</div>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tropicalTwistModal">
+            View Details
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Watermelon Berry -->
+    <div class="col-12 col-sm-6 col-lg-4">
+      <div class="card h-100 text-center">
+        <img src="smothiest img/Watermelon Berry.png" class="card-img-top" alt="Watermelon Berry Smoothie">
+        <div class="card-body">
+          <h2 class="card-title h5">Watermelon Berry</h2>
+          <div class="price mb-2">$5.89</div>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#watermelonBerryModal">
+            View Details
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Previous Button -->
+<div class="previous-btn">
+  <button onclick="history.back()">⬅ Previous</button>
+</div>
+
+
+  <!-- Modals -->
+ <!-- Mango Madness Modal -->
+<div class="modal fade" id="mangoModal" tabindex="-1" aria-labelledby="mangoMadnessModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="row g-0">
+        <div class="col-md-5">
+          <img src="smothiest img/Mango Smothie.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="Mango Madness">
+        </div>
+        <div class="col-md-7">
+          <div class="modal-header">
+            <h5 class="modal-title" id="mangoMadnessModalLabel">Mango Madness</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Description</h6>
+            <p>
+              A tropical delight made with fresh mangoes, creamy yogurt, and a hint of honey. Perfectly refreshing and rich in vitamin C.
+            </p>
+            <div class="price fw-bold">$4.99</div>
+          </div>
+          <div class="modal-footer">
+            <a href="storelocation.html" class="btn btn-success">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Very Berry Coconut Modal -->
+<div class="modal fade" id="berryCoconutModal" tabindex="-1" aria-labelledby="berryCoconutModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="row g-0">
+        <div class="col-md-5">
+          <img src="smothiest img/verryBerry Smothie.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="Very Berry Coconut">
+        </div>
+        <div class="col-md-7">
+          <div class="modal-header">
+            <h5 class="modal-title" id="berryCoconutModalLabel">Very Berry Coconut</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Description</h6>
+            <p>
+              A creamy blend of strawberries, blueberries, and coconut milk. Packed with antioxidants and tropical flavors in every sip.
+            </p>
+            <div class="price fw-bold">$5.49</div>
+          </div>
+          <div class="modal-footer">
+            <a href="storelocation.html" class="btn btn-success">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Strawberry Kiwi Modal -->
+<div class="modal fade" id="strawberryKiwiModal" tabindex="-1" aria-labelledby="strawberryKiwiModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="row g-0">
+        <div class="col-md-5">
+          <img src="smothiest img/BlueBerry Smothie.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="Strawberry Kiwi">
+        </div>
+        <div class="col-md-7">
+          <div class="modal-header">
+            <h5 class="modal-title" id="strawberryKiwiModalLabel">Strawberry Kiwi</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Description</h6>
+            <p>
+              Sweet strawberries meet tangy kiwis in this refreshing smoothie. Bursting with vitamin C and fiber for a healthy boost.
+            </p>
+            <div class="price fw-bold">$4.79</div>
+          </div>
+          <div class="modal-footer">
+            <a href="storelocation.html" class="btn btn-success">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Banana-Berry Modal -->
+<div class="modal fade" id="bananaBerryModal" tabindex="-1" aria-labelledby="bananaBerryModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="row g-0">
+        <div class="col-md-5">
+          <img src="smothiest img/banana berry.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="Banana-Berry">
+        </div>
+        <div class="col-md-7">
+          <div class="modal-header">
+            <h5 class="modal-title" id="bananaBerryModalLabel">Banana-Berry</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Description</h6>
+            <p>
+              A creamy mix of ripe bananas and assorted berries, blended to perfection. A rich source of potassium and antioxidants.
+            </p>
+            <div class="price fw-bold">$4.59</div>
+          </div>
+          <div class="modal-footer">
+            <a href="storelocation.html" class="btn btn-success">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Tropical Twist Modal -->
+<div class="modal fade" id="tropicalTwistModal" tabindex="-1" aria-labelledby="tropicalTwistModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="row g-0">
+        <div class="col-md-5">
+          <img src="smothiest img/Avocado Smothie.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="Tropical Twist">
+        </div>
+        <div class="col-md-7">
+          <div class="modal-header">
+            <h5 class="modal-title" id="tropicalTwistModalLabel">Tropical Twist</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Description</h6>
+            <p>
+              A delicious tropical smoothie made with pineapple, mango, and passion fruit. Packed with natural sweetness and vitamins.
+            </p>
+            <div class="price fw-bold">$5.29</div>
+          </div>
+          <div class="modal-footer">
+            <a href="storelocation.html" class="btn btn-success">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Watermelon Berry Modal -->
+<div class="modal fade" id="watermelonBerryModal" tabindex="-1" aria-labelledby="watermelonBerryModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="row g-0">
+        <div class="col-md-5">
+          <img src="smothiest img/Watermelon Berry.png" class="img-fluid h-100 w-100 object-fit-cover" alt="Watermelon Berry">
+        </div>
+        <div class="col-md-7">
+          <div class="modal-header">
+            <h5 class="modal-title" id="watermelonBerryModalLabel">Watermelon Berry</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Description</h6>
+            <p>
+              Juicy watermelon blended with mixed berries, creating a refreshing drink that hydrates and satisfies your sweet tooth.
+            </p>
+            <div class="price fw-bold">$4.39</div>
+          </div>
+          <div class="modal-footer">
+            <a href="storelocation.html" class="btn btn-success">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+      <!-- Footer -->
+    <footer class="footer">
+  <div class="footer-container">
+    
+    <!-- Column 1 -->
+    <div class="footer-col">
+      <h3>About Us</h3>
+      <p>
+        Shrek Juice brings you 100% fresh & healthy juices, smoothies, and shakes. 
+        Our mission is to keep you refreshed naturally.
+      </p>
+      <p>
+    Shrek Juice is more than just a juice bar — it’s a lifestyle choice for those who value health, freshness, and great taste. 
+    Since our beginning, we have been committed to serving 100% natural juices, smoothies, protein shakes, and mocktails made 
+    from hand-picked fruits and vegetables.  
+  </p>
+  
+    </div>
+
+    <!-- Column 2 -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <ul class="footer-links">
+         <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products & Menu</a></li>
+      <li><a href="storelocation.html">Store Location</a></li>
+      <li><a href="frenchising.html">Franchising</a></li>
+      <li><a href="catering.html">Catering</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      <li><a href="about.html">About us</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3 -->
+    <div class="footer-col">
+      <h3>Contact Us</h3>
+      <p><i class="bi bi-geo-alt-fill"></i>
+ Karachi, Pakistan</p>
+      <p><i class="bi bi-telephone-fill"></i> +92 300 1234567</p>
+      <p>✉️ info@juice.com</p>
+    </div>
+
+    <!-- Column 4 -->
+    <div class="footer-col">
+      <h3>Follow Us</h3>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    
+  </div>
+
+  <!-- Bottom -->
+  <div class="footer-bottom">
+    <p>© 2025 JUICE. All rights reserved.</p>
+  </div>
+</footer>
+
+
+<script>
+    function openModal(id) {
+      document.getElementById(id).classList.add("active");
+    }
+    function closeModal(id) {
+      document.getElementById(id).classList.remove("active");
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

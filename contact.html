@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHREK JUICE CENTER</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Tumhari custom CSS (yahan tumhari purani file ka link do) -->
+  <link rel="stylesheet" href="style.css">
+  <style>
+  .error {
+    border: 2px solid red !important;
+  }
+  .success {
+    border: 2px solid green !important;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='green' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M9 16.17l-3.88-3.88-1.42 1.41L9 19 21 7l-1.41-1.41z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 20px;
+  }
+  .error-msg {
+    color: red;
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+    display: none;
+  }
+ /* Common input/textarea styles */
+#contactForm input,
+#contactForm textarea {
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+  outline: none;
+  width: 100%;
+  transition: 0.3s ease;
+}
+
+/* Success style */
+#contactForm input.success,
+#contactForm textarea.success {
+  border-color: #28a745; /* green */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2328a745' viewBox='0 0 16 16'%3E%3Cpath d='M13.485 1.929a1 1 0 0 1 .072 1.414l-7.25 8a1 1 0 0 1-1.43.06l-3.25-3a1 1 0 0 1 1.356-1.47l2.47 2.277 6.566-7.242a1 1 0 0 1 1.466-.04z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 18px;
+}
+
+/* Error style */
+#contactForm input.error,
+#contactForm textarea.error {
+  border-color: #dc3545; /* red */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23dc3545' viewBox='0 0 16 16'%3E%3Cpath d='M8.982 1.566a1.5 1.5 0 0 0-1.964 0L.165 7.233a1.5 1.5 0 0 0 0 2.122l6.853 5.667a1.5 1.5 0 0 0 1.964 0l6.853-5.667a1.5 1.5 0 0 0 0-2.122L8.982 1.566zM8 5a.905.905 0 0 1 .9.9v3.2a.9.9 0 0 1-1.8 0V5.9A.905.905 0 0 1 8 5zm0 6.5a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 18px;
+}
+
+/* Error message text */
+#contactForm small {
+  display: none;
+  color: #dc3545;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+</style>
+
+
+</head>
+<body>
+
+  <!-- Header -->
+<header class="d-flex align-items-center justify-content-between p-2 p-lg-3 bg-#2f4f2f">
+  <a href="#" class="text-white fw-bold fs-4 text-decoration-none">
+    <img src="logo/shrek_no_bg.png" alt="" style="height: 60px; width: 60px;">
+  </a>
+
+   <!-- Active Page Name (Mobile Only) -->
+   <div class="d-flex d-lg-none align-items-center w-100 px-3">
+    <!-- Left side -->
+    <span class="text-white fw-bold active">
+      Contact us
+    </span>
+  
+    <!-- Right side -->
+    <button class="btn btn-outline-light ms-auto" type="button"
+      data-bs-toggle="offcanvas" data-bs-target="#sideMenu" aria-controls="sideMenu">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+
+  <!-- Desktop Nav -->
+  <nav class="d-none d-lg-block">
+    <ul class="d-flex list-unstyled ms-auto">
+      <li class="px-1"><a href="index.html" class="text-c0a060 text-decoration-none">Home</a></li>
+      <li class="px-1"><a href="products.html" class="text-#c0a060 text-decoration-none">Products & menus</a></li>
+      <li class="px-1"><a href="storelocation.html" class="text-#c0a060 text-decoration-none">Store Location</a></li>
+      <li class="px-1"><a href="frenchising.html" class="text-#c0a060 text-decoration-none">Franchising</a></li>
+      <li class="px-1"><a href="catering.html" class="text-#c0a060 text-decoration-none">Catering</a></li>
+      <li class="px-1"><a href="#" class="text-#c0a060 text-decoration-none active">Contact</a></li>
+      <li class="px-1"><a href="feedback.html" class="text-#c0a060 text-decoration-none">Feedback</a></li>
+      <li class="px-1"><a href="about.html" class="text-#c0a060 text-decoration-none">About Us</a></li>
+    </ul>
+  </nav>
+
+ 
+</header>
+
+  <!-- Sidebar Offcanvas -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="sideMenu" aria-labelledby="sideMenuLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="sideMenuLabel">Menu</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="list-unstyled">
+        <li><a href="index.html" class="d-block py-2">Home</a></li>
+        <li><a href="products.html" class="d-block py-2">Products & Menu</a></li>
+        <li><a href="storelocation.html" class="d-block py-2">Store Location</a></li>
+        <li><a href="frenchising.html" class="d-block py-2">Franchising</a></li>
+        <li><a href="catering.html" class="d-block py-2">Catering</a></li>
+        <li><a href="#" class="d-block py-2 active">Contact</a></li>
+        <li><a href="feedback.html" class="d-block py-2">Feedback</a></li>
+        <li><a href="about.html" class="d-block py-2">About us</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+
+  
+<main class="container">
+  <section class="card">
+    <div class="form-layout">
+      
+      <!-- Left Side Image -->
+      <div class="form-image" >
+        <img src="logo/shrek_no_bg.png" alt="Contact Illustration" style="object-fit: contain;">
+      </div>
+
+      <!-- Right Side Form -->
+      <div class="form-content">
+        <h1><strong>Contact Us</strong></h1>
+        <p>For any inquiries, kindly fill out the form below or contact us via email.</p>
+
+        <form id="contactForm" class="form" novalidate>
+          <label for="name" class=" d-block text-start">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name">
+          <small class="error-msg"></small>
+
+          <label for="email" class="d-block text-start">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com">
+          <small class="error-msg"></small>
+
+          <label for="message" class="d-block text-start">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message"></textarea>
+          <small class="error-msg"></small>
+
+          <button type="submit" class="btn btn-success mt-2">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Bootstrap Success Modal -->
+<div class="modal fade" id="contactSuccessModal" tabindex="-1" aria-labelledby="contactSuccessLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center">
+      <div class="modal-header">
+        <h5 class="modal-title" id="contactSuccessLabel">Success</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ✅ Message Sent Successfully!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-bs-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    
+    <!-- Column 1 -->
+    <div class="footer-col">
+      <h3>About Us</h3>
+      <p>
+        Shrek Juice brings you 100% fresh & healthy juices, smoothies, and shakes. 
+        Our mission is to keep you refreshed naturally.
+      </p>
+      <p>
+    Shrek Juice is more than just a juice bar — it’s a lifestyle choice for those who value health, freshness, and great taste. 
+    Since our beginning, we have been committed to serving 100% natural juices, smoothies, protein shakes, and mocktails made 
+    from hand-picked fruits and vegetables.  
+  </p>
+  
+    </div>
+
+    <!-- Column 2 -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <ul class="footer-links">
+         <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products & Menu</a></li>
+      <li><a href="storelocation.html">Store Location</a></li>
+      <li><a href="frenchising.html">Franchising</a></li>
+      <li><a href="catering.html">Catering</a></li>
+      <li><a href="#" class="active">Contact</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      <li><a href="about.html">About us</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3 -->
+    <div class="footer-col">
+      <h3>Contact Us</h3>
+      <p><i class="bi bi-geo-alt-fill"></i>
+ Karachi, Pakistan</p>
+      <p><i class="bi bi-telephone-fill"></i> +92 300 1234567</p>
+      <p>✉️ info@juice.com</p>
+    </div>
+
+    <!-- Column 4 -->
+    <div class="footer-col">
+      <h3>Follow Us</h3>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    
+  </div>
+
+  <!-- Bottom -->
+  <div class="footer-bottom">
+    <p>© 2025 JUICE. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  const contactForm = document.getElementById("contactForm");
+
+  // Regex patterns
+  const namePattern = /^[A-Za-z\s]{2,}$/;
+  const emailPattern = /^[a-z0-9_.]+@[^ ]+\.[a-z]{2,3}$/;
+  const messagePattern = /^.{10,}$/;
+
+  function validateField(field, pattern, errorMsg) {
+    const small = field.nextElementSibling; // <small> tag niche hoga
+    const parent = field.parentElement;
+
+    if (!pattern.test(field.value.trim())) {
+      field.classList.remove("success");
+      field.classList.add("error");
+      small.style.display = "block";
+      small.textContent = errorMsg;
+
+      // remove old icon if any
+      let icon = parent.querySelector(".status-icon");
+      if (icon) icon.remove();
+
+      // ❌ cross icon
+      const cross = document.createElement("span");
+      cross.innerHTML = "";
+      cross.classList.add("status-icon", "error-icon");
+      parent.appendChild(cross);
+
+      return false;
+    } else {
+      field.classList.remove("error");
+      field.classList.add("success");
+      small.style.display = "none";
+
+      // remove old icon if any
+      let icon = parent.querySelector(".status-icon");
+      if (icon) icon.remove();
+
+      // ✅ check icon
+      const check = document.createElement("span");
+      check.innerHTML = "";
+      check.classList.add("status-icon", "success-icon");
+      parent.appendChild(check);
+
+      return true;
+    }
+  }
+
+  // Submit form
+  contactForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    let validName = validateField(document.getElementById("name"), namePattern, "Please enter a valid name (min 2 letters).");
+    let validEmail = validateField(document.getElementById("email"), emailPattern, "Please enter a valid email.");
+    let validMessage = validateField(document.getElementById("message"), messagePattern, "Message must be at least 10 characters.");
+
+    if (validName && validEmail && validMessage) {
+      contactForm.reset();
+
+      // Remove all classes + icons
+      document.querySelectorAll("#contactForm input, #contactForm textarea").forEach(el => {
+        el.classList.remove("success", "error");
+        let icon = el.parentElement.querySelector(".status-icon");
+        if (icon) icon.remove();
+      });
+
+      // Show Bootstrap modal
+      const successModal = new bootstrap.Modal(document.getElementById("contactSuccessModal"));
+      successModal.show();
+    }
+  });
+
+  // Live validation (real-time)
+  document.getElementById("name").addEventListener("input", e => validateField(e.target, namePattern, "Please enter a valid name (min 2 letters)."));
+  document.getElementById("email").addEventListener("input", e => validateField(e.target, emailPattern, "Please enter a valid email."));
+  document.getElementById("message").addEventListener("input", e => validateField(e.target, messagePattern, "Message must be at least 10 characters."));
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

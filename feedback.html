@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHREK JUICE CENTER</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Tumhari custom CSS (yahan tumhari purani file ka link do) -->
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Common input/textarea styles */
+#feedbackForm input,
+#feedbackForm textarea {
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+  outline: none;
+  width: 100%;
+  transition: 0.3s ease;
+}
+
+/* Success style */
+#feedbackForm input.success,
+#feedbackForm textarea.success {
+  border-color: #28a745; /* green */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2328a745' viewBox='0 0 16 16'%3E%3Cpath d='M13.485 1.929a1 1 0 0 1 .072 1.414l-7.25 8a1 1 0 0 1-1.43.06l-3.25-3a1 1 0 0 1 1.356-1.47l2.47 2.277 6.566-7.242a1 1 0 0 1 1.466-.04z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 18px;
+}
+
+/* Error style */
+#feedbackForm input.error,
+#feedbackForm textarea.error {
+  border-color: #dc3545; /* red */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23dc3545' viewBox='0 0 16 16'%3E%3Cpath d='M8.982 1.566a1.5 1.5 0 0 0-1.964 0L.165 7.233a1.5 1.5 0 0 0 0 2.122l6.853 5.667a1.5 1.5 0 0 0 1.964 0l6.853-5.667a1.5 1.5 0 0 0 0-2.122L8.982 1.566zM8 5a.905.905 0 0 1 .9.9v3.2a.9.9 0 0 1-1.8 0V5.9A.905.905 0 0 1 8 5zm0 6.5a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 18px;
+}
+
+/* Error message text */
+#feedbackForm small {
+  display: none;
+  color: #dc3545;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+<header class="d-flex align-items-center justify-content-between p-2 p-lg-3 bg-#2f4f2f">
+  <a href="#" class="text-white fw-bold fs-4 text-decoration-none">
+    <img src="logo/shrek_no_bg.png" alt="" style="height: 60px; width: 60px;">
+  </a>
+
+   <!-- Active Page Name (Mobile Only) -->
+   <div class="d-flex d-lg-none align-items-center w-100 px-3">
+    <!-- Left side -->
+    <span class="text-white fw-bold active">
+      Feedback
+    </span>
+  
+    <!-- Right side -->
+    <button class="btn btn-outline-light ms-auto" type="button"
+      data-bs-toggle="offcanvas" data-bs-target="#sideMenu" aria-controls="sideMenu">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+
+  <!-- Desktop Nav -->
+  <nav class="d-none d-lg-block">
+    <ul class="d-flex list-unstyled ms-auto">
+      <li class="px-1"><a href="index.html" class="text-c0a060 text-decoration-none">Home</a></li>
+      <li class="px-1"><a href="products.html" class="text-#c0a060 text-decoration-none">Products & menus</a></li>
+      <li class="px-1"><a href="storelocation.html" class="text-#c0a060 text-decoration-none">Store Location</a></li>
+      <li class="px-1"><a href="frenchising.html" class="text-#c0a060 text-decoration-none">Franchising</a></li>
+      <li class="px-1"><a href="catering.html" class="text-#c0a060 text-decoration-none">Catering</a></li>
+      <li class="px-1"><a href="contact.html" class="text-#c0a060 text-decoration-none">Contact</a></li>
+      <li class="px-1"><a href="#" class="text-#c0a060 text-decoration-none active">Feedback</a></li>
+      <li class="px-1"><a href="about.html" class="text-#c0a060 text-decoration-none">About Us</a></li>
+    </ul>
+  </nav>
+
+  
+</header>
+
+  <!-- Sidebar Offcanvas -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="sideMenu" aria-labelledby="sideMenuLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="sideMenuLabel">Menu</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="list-unstyled">
+        <li><a href="index.html" class="d-block py-2">Home</a></li>
+        <li><a href="products.html" class="d-block py-2">Products & Menu</a></li>
+        <li><a href="storelocation.html" class="d-block py-2">Store Location</a></li>
+        <li><a href="frenchising.html" class="d-block py-2">Franchising</a></li>
+        <li><a href="catering.html" class="d-block py-2">Catering</a></li>
+        <li><a href="contact.html" class="d-block py-2">Contact</a></li>
+        <li><a href="#" class="d-block py-2 active">Feedback</a></li>
+        <li><a href="about.html" class="d-block py-2">About us</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+<main class="container">
+  <section class="card">
+    <div class="form-layout">
+      
+      <!-- Left: Feedback Form -->
+      <div class="col-md-6 p-4">
+        <h1><strong>Feedback</strong></h1>
+        <p>Your opinion matters — let us know what you think.</p>
+  
+        <form id="feedbackForm" class="needs-validation" novalidate>
+          
+          <!-- Name field -->
+          <div class="mb-3">
+            <strong><label for="fbName" class="form-label d-block text-start">Name</label></strong>
+            <input 
+              id="fbName" 
+              name="fbName" 
+              type="text" 
+              class="form-control" 
+              placeholder="Your name"
+              pattern="^[A-Za-z\s]{2,30}$">
+            <div class="invalid-feedback">
+              Please enter a valid name (letters only, 2–30 characters).
+            </div>
+          </div>
+  
+          <!-- Rating field -->
+          <div class="mb-3">
+            <strong><label for="rating" class="form-label d-block text-start">Rating</label></strong>
+            <select id="rating" name="rating" class="form-select" required>
+              <option value="">Select rating</option>
+              <option value="5">5 — Excellent</option>
+              <option value="4">4 — Very Good</option>
+              <option value="3">3 — Good</option>
+              <option value="2">2 — Needs Improvement</option>
+              <option value="1">1 — Poor</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a rating.
+            </div>
+          </div>
+  
+          <!-- Comments field -->
+          <div class="mb-3">
+            <strong><label for="comments" class="form-label d-block text-start">Comments</label></strong>
+            <textarea id="comments" name="comments" rows="4" class="form-control" placeholder="Your thoughts..." required></textarea>
+            <div class="invalid-feedback">
+              Please enter your comments.
+            </div>
+          </div>
+  
+          <!-- Submit button -->
+          <button type="submit" class="btn btn-success">Submit Feedback</button>
+          <div id="feedbackResult" class="result mt-2" aria-live="polite"></div>
+        </form>
+      </div>
+  
+      <!-- Right: Picture -->
+      <div class="col-md-6 d-flex align-items-center justify-content-center bg-light form-image">
+        <img src="logo/shrek_no_bg.png" alt="Feedback Illustration" class="img-fluid p-4">
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Success Modal -->
+<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center p-4">
+      <h5 class="modal-title mb-3" id="successModalLabel">✅ Feedback Submitted</h5>
+      <p>Thank you for your feedback! We really appreciate your input. 💚</p>
+      <hr>
+      <p><strong>Name:</strong> <span id="showName"></span></p>
+      <p><strong>Rating:</strong> <span id="showRating"></span></p>
+      <p><strong>Comments:</strong> <span id="showComments"></span></p>
+      <button type="button" class="btn btn-success mt-2" data-bs-dismiss="modal">Ok</button>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    
+    <!-- Column 1 -->
+    <div class="footer-col">
+      <h3>About Us</h3>
+      <p>
+        Shrek Juice brings you 100% fresh & healthy juices, smoothies, and shakes. 
+        Our mission is to keep you refreshed naturally.
+      </p>
+      <p>
+    Shrek Juice is more than just a juice bar — it’s a lifestyle choice for those who value health, freshness, and great taste. 
+    Since our beginning, we have been committed to serving 100% natural juices, smoothies, protein shakes, and mocktails made 
+    from hand-picked fruits and vegetables.  
+  </p>
+  
+    </div>
+
+    <!-- Column 2 -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <ul class="footer-links">
+         <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products & Menu</a></li>
+      <li><a href="storelocation.html">Store Location</a></li>
+      <li><a href="frenchising.html">Franchising</a></li>
+      <li><a href="catering.html">Catering</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="#" class="active">Feedback</a></li>
+      <li><a href="about.html">About us</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3 -->
+    <div class="footer-col">
+      <h3>Contact Us</h3>
+      <p><i class="bi bi-geo-alt-fill"></i>
+ Karachi, Pakistan</p>
+      <p><i class="bi bi-telephone-fill"></i> +92 300 1234567</p>
+      <p>✉️ info@juice.com</p>
+    </div>
+
+    <!-- Column 4 -->
+    <div class="footer-col">
+      <h3>Follow Us</h3>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    
+  </div>
+
+  <!-- Bottom -->
+  <div class="footer-bottom">
+    <p>© 2025 JUICE. All rights reserved.</p>
+  </div>
+</footer>
+<script>
+  (function () {
+    'use strict';
+    const form = document.getElementById('feedbackForm');
+
+    // Patterns
+    const namePattern = /^[A-Za-z\s]{2,}$/;
+    const ratingPattern = /^[1-5]$/; // 1 se 5 ke beech number
+    const commentsPattern = /^.{10,}$/;
+
+    // Validation function
+    function validateField(field, pattern, errorMsg) {
+      const small = field.nextElementSibling; // <small> niche hona chahiye
+      if (!pattern.test(field.value.trim())) {
+        field.classList.remove("success");
+        field.classList.add("error");
+        if (small) {
+          small.style.display = "block";
+          small.textContent = errorMsg;
+        }
+        return false;
+      } else {
+        field.classList.remove("error");
+        field.classList.add("success");
+        if (small) small.style.display = "none";
+        return true;
+      }
+    }
+
+    // Submit event
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      let validName = validateField(
+        document.getElementById("fbName"),
+        namePattern,
+        "Please enter a valid name (min 2 letters)."
+      );
+      let validRating = validateField(
+        document.getElementById("rating"),
+        ratingPattern,
+        "Please enter a rating between 1 and 5."
+      );
+      let validComments = validateField(
+        document.getElementById("comments"),
+        commentsPattern,
+        "Comments must be at least 10 characters."
+      );
+
+      if (!(validName && validRating && validComments)) return;
+
+      // Agar valid hai:
+      const name = document.getElementById('fbName').value;
+      const rating = document.getElementById('rating').value;
+      const comments = document.getElementById('comments').value;
+
+      // Insert values into modal
+      document.getElementById('showName').innerText = name || "Anonymous";
+      document.getElementById('showRating').innerText = rating;
+      document.getElementById('showComments').innerText = comments;
+
+      // Show modal
+      const successModal = new bootstrap.Modal(document.getElementById('successModal'));
+      successModal.show();
+
+      // Reset form + remove styles
+      form.reset();
+      form.querySelectorAll("input, textarea").forEach(el => {
+        el.classList.remove("success", "error");
+      });
+    });
+
+    // Live validation
+    document.getElementById("fbName").addEventListener("input", e => 
+      validateField(e.target, namePattern, "Please enter a valid name (min 2 letters).")
+    );
+    document.getElementById("rating").addEventListener("input", e => 
+      validateField(e.target, ratingPattern, "Please enter a rating between 1 and 5.")
+    );
+    document.getElementById("comments").addEventListener("input", e => 
+      validateField(e.target, commentsPattern, "Comments must be at least 10 characters.")
+    );
+
+  })();
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

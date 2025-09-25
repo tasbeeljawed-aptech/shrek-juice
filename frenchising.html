@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHREK JUICE CENTER</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Tumhari custom CSS (yahan tumhari purani file ka link do) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+<header class="d-flex align-items-center justify-content-between p-2 p-lg-3 bg-#2f4f2f">
+  <a href="#" class="text-white fw-bold fs-4 text-decoration-none">
+    <img src="logo/shrek_no_bg.png" alt="" style="height: 60px; width: 60px;">
+  </a>
+
+   <!-- Active Page Name (Mobile Only) -->
+   <div class="d-flex d-lg-none align-items-center w-100 px-3">
+    <!-- Left side -->
+    <span class="text-white fw-bold active">
+      Franchising
+    </span>
+  
+    <!-- Right side -->
+    <button class="btn btn-outline-light ms-auto" type="button"
+      data-bs-toggle="offcanvas" data-bs-target="#sideMenu" aria-controls="sideMenu">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+
+  <!-- Desktop Nav -->
+  <nav class="d-none d-lg-block">
+    <ul class="d-flex list-unstyled ms-auto">
+      <li class="px-1"><a href="index.html" class="text-c0a060 text-decoration-none">Home</a></li>
+      <li class="px-1"><a href="products.html" class="text-#c0a060 text-decoration-none">Products & menus</a></li>
+      <li class="px-1"><a href="storelocation.html" class="text-#c0a060 text-decoration-none">Store Location</a></li>
+      <li class="px-1"><a href="#" class="text-#c0a060 text-decoration-none active">Franchising</a></li>
+      <li class="px-1"><a href="catering.html" class="text-#c0a060 text-decoration-none">Catering</a></li>
+      <li class="px-1"><a href="contact.html" class="text-#c0a060 text-decoration-none">Contact</a></li>
+      <li class="px-1"><a href="feedback.html" class="text-#c0a060 text-decoration-none">Feedback</a></li>
+      <li class="px-1"><a href="about.html" class="text-#c0a060 text-decoration-none">About Us</a></li>
+    </ul>
+  </nav>
+
+  
+</header>
+
+  <!-- Sidebar Offcanvas -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="sideMenu" aria-labelledby="sideMenuLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="sideMenuLabel">Menu</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="list-unstyled">
+        <li><a href="index.html" class="d-block py-2">Home</a></li>
+        <li><a href="products.html" class="d-block py-2">Products & Menu</a></li>
+        <li><a href="storelocation.html" class="d-block py-2">Store Location</a></li>
+        <li><a href="#" class="d-block py-2 active">Franchising</a></li>
+        <li><a href="catering.html" class="d-block py-2">Catering</a></li>
+        <li><a href="contact.html" class="d-block py-2">Contact</a></li>
+        <li><a href="feedback.html" class="d-block py-2">Feedback</a></li>
+        <li><a href="about.html" class="d-block py-2">About us</a></li>
+      </ul>
+    </div>
+  </div>
+   <!-- frenchising -->
+
+   
+   <!-- Franchise Section -->
+<div class="container my-5">
+  <div class="row g-4">
+
+    <!-- Left Side -->
+    <div class="col-md-6">
+      <div class="franchise-info">
+        <h2 class="franchise-title">Become a Shrek Juices Partner</h2>
+        <p>
+          Shrek Juice Centre is one of the fastest-growing juice brands. 
+          By becoming a franchise partner, you join a network dedicated 
+          to health, freshness, and business success.
+        </p>
+        <ul>
+          <li> Low investment, high return model</li>
+          <li> Full training & marketing support</li>
+          <li> Trusted brand with loyal customers</li>
+          <li> Exclusive territory rights</li>
+        </ul>
+        <img src="shop img/franchising.png" alt="Franchise" class="img-fluid" style="object-fit: contain;">
+      </div>
+    </div>
+
+    <!-- Right Side Form -->
+    <div class="col-md-6">
+      <div class="card p-4 shadow">
+        <h3>Franchise Application</h3>
+        <form id="franchiseForm" novalidate>
+          
+          <!-- Full Name -->
+          <div class="mb-3 position-relative">
+           <strong><label class="form-label d-block text-start">Full Name</label></strong> 
+            <input type="text" id="name" class="form-control" placeholder="Enter your name">
+            <div class="invalid-feedback">Please enter a valid name (min 3 letters).</div>
+            <div class="valid-feedback"><i class="bi bi-check-circle"></i> Looks good!</div>
+          </div>
+
+          <!-- Email -->
+          <div class="mb-3 position-relative">
+            <strong><label class="form-label d-block text-start">Email</label></strong>
+            <input type="email" id="email" class="form-control" placeholder="Enter your email">
+            <div class="invalid-feedback">Enter a valid email address.</div>
+            <div class="valid-feedback"><i class="bi bi-check-circle"></i> Valid email!</div>
+          </div>
+
+          <!-- Phone -->
+          <div class="mb-3 position-relative">
+            <strong><label class="form-label d-block text-start">Phone</label></strong>
+            <input type="tel" id="phone" class="form-control" placeholder="03XXXXXXXXX">
+            <div class="invalid-feedback">Enter a valid 11-digit phone number.</div>
+            <div class="valid-feedback"><i class="bi bi-check-circle"></i> Valid phone!</div>
+          </div>
+
+          <!-- City -->
+          <div class="mb-3 position-relative">
+           <strong><label class="form-label d-block text-start">City</label></strong> 
+            <input type="text" id="city" class="form-control" placeholder="Enter your city">
+            <div class="invalid-feedback">City name must be at least 2 letters.</div>
+            <div class="valid-feedback"><i class="bi bi-check-circle"></i> Looks good!</div>
+          </div>
+
+          <!-- Investment -->
+          <div class="mb-3 position-relative">
+           <strong><label class="form-label d-block text-start">Available Investment (PKR)</label></strong> 
+            <input type="number" id="investment" class="form-control" placeholder="e.g. 2000000">
+            <div class="invalid-feedback">Enter a valid investment (min 500,000 PKR).</div>
+            <div class="valid-feedback"><i class="bi bi-check-circle"></i> Investment valid!</div>
+          </div>
+
+          <!-- Message -->
+          <div class="mb-3 position-relative">
+           <strong><label class="form-label d-block text-start">Why do you want this franchise?</label></strong> 
+            <textarea id="message" class="form-control" rows="3" placeholder="Write your message..."></textarea>
+            <div class="invalid-feedback">Message must be at least 10 characters long.</div>
+            <div class="valid-feedback"><i class="bi bi-check-circle"></i> Good explanation!</div>
+          </div>
+
+          <!-- Submit -->
+          <button type="submit" class="btn btn-success w-100">Submit Application</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap Icons (for check symbol) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    
+    <!-- Column 1 -->
+    <div class="footer-col">
+      <h3>About Us</h3>
+      <p>
+        Shrek Juice brings you 100% fresh & healthy juices, smoothies, and shakes. 
+        Our mission is to keep you refreshed naturally.
+      </p>
+      <p>
+    Shrek Juice is more than just a juice bar — it’s a lifestyle choice for those who value health, freshness, and great taste. 
+    Since our beginning, we have been committed to serving 100% natural juices, smoothies, protein shakes, and mocktails made 
+    from hand-picked fruits and vegetables.  
+  </p>
+  
+    </div>
+
+    <!-- Column 2 -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <ul class="footer-links">
+         <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products & Menu</a></li>
+      <li><a href="storelocation.html">Store Location</a></li>
+      <li><a href="#" class="active">Franchising</a></li>
+      <li><a href="catering.html">Catering</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      <li><a href="about.html">About us</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3 -->
+    <div class="footer-col">
+      <h3>Contact Us</h3>
+     <p><i class="bi bi-geo-alt-fill"></i>
+ Karachi, Pakistan</p>
+      <p><i class="bi bi-telephone-fill"></i> +92 300 1234567</p>
+      <p>✉️ info@juice.com</p>
+    </div>
+
+    <!-- Column 4 -->
+    <div class="footer-col">
+      <h3>Follow Us</h3>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    
+  </div>
+
+  <!-- Bottom -->
+  <div class="footer-bottom">
+    <p>© 2025 JUICE. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  // Regex patterns
+  const nameRegex = /^[A-Za-z\s]{3,}$/;
+  const emailRegex =  /^[a-z0-9_.]+@[^ ]+\.[a-z]{2,3}$/;
+  const phoneRegex = /^03\d{9}$/; // Pakistani format
+  const cityRegex = /^[A-Za-z\s]{2,}$/;
+  const investmentMin = 500000;
+  const msgMin = 10;
+
+  // Fields
+  const fields = {
+    name: { regex: nameRegex },
+    email: { regex: emailRegex },
+    phone: { regex: phoneRegex },
+    city: { regex: cityRegex },
+    investment: { custom: (val) => val >= investmentMin },
+    message: { custom: (val) => val.trim().length >= msgMin }
+  };
+
+  // Validation function
+  function checkField(field, rule) {
+    const value = field.value.trim();
+    let isValid = false;
+
+    if (rule.regex) {
+      isValid = rule.regex.test(value);
+    } else if (rule.custom) {
+      isValid = rule.custom(value);
+    }
+
+    if (isValid) {
+      field.classList.remove("is-invalid");
+      field.classList.add("is-valid");
+    } else {
+      field.classList.remove("is-valid");
+      field.classList.add("is-invalid");
+    }
+  }
+
+  // Add listeners for real-time validation
+  for (let id in fields) {
+    const input = document.getElementById(id);
+    const rule = fields[id];
+
+    input.addEventListener("input", () => checkField(input, rule));
+    input.addEventListener("blur", () => checkField(input, rule));
+  }
+
+  // Submit handling
+  document.getElementById("franchiseForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    let valid = true;
+
+    for (let id in fields) {
+      const input = document.getElementById(id);
+      const rule = fields[id];
+      checkField(input, rule);
+      if (!input.classList.contains("is-valid")) {
+        valid = false;
+      }
+    }
+
+    if (valid) {
+      Swal.fire({
+        icon: 'success',
+        title: 'Application Submitted!',
+        text: 'Thank you for applying as a franchise partner. We will contact you soon.',
+        confirmButtonColor: '#28a745'
+      });
+
+      this.reset();
+      document.querySelectorAll(".form-control").forEach(el => el.classList.remove("is-valid"));
+    }
+  });
+
+});
+</script>
+
+<!-- SweetAlert2 for Popup -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

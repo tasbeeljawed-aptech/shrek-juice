@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHREK JUICE CENTER</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Tumhari custom CSS (yahan tumhari purani file ka link do) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+<header class="d-flex align-items-center justify-content-between p-2 p-lg-3 bg-#2f4f2f">
+  <a href="#" class="text-white fw-bold fs-4 text-decoration-none">
+    <img src="logo/shrek_no_bg.png" alt="" style="height: 60px; width: 60px;">
+  </a>
+
+  <!-- Active Page Name (Mobile Only) -->
+  <div class="d-flex d-lg-none align-items-center w-100 px-3">
+    <!-- Left side -->
+    <span class="text-white fw-bold active">
+      Home
+    </span>
+  
+    <!-- Right side -->
+    <button class="btn btn-outline-light ms-auto" type="button"
+      data-bs-toggle="offcanvas" data-bs-target="#sideMenu" aria-controls="sideMenu">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+
+  <!-- Desktop Nav -->
+  <nav class="d-none d-lg-block">
+    <ul class="d-flex list-unstyled ms-auto">
+      <li class="px-1"><a href="#" class="text-c0a060 text-decoration-none active">Home</a></li>
+      <li class="px-1"><a href="products.html" class="text-#c0a060 text-decoration-none">Products & menus</a></li>
+      <li class="px-1"><a href="storelocation.html" class="text-#c0a060 text-decoration-none">Store Location</a></li>
+      <li class="px-1"><a href="frenchising.html" class="text-#c0a060 text-decoration-none">Franchising</a></li>
+      <li class="px-1"><a href="catering.html" class="text-#c0a060 text-decoration-none">Catering</a></li>
+      <li class="px-1"><a href="contact.html" class="text-#c0a060 text-decoration-none">Contact</a></li>
+      <li class="px-1"><a href="feedback.html" class="text-#c0a060 text-decoration-none">Feedback</a></li>
+      <li class="px-1"><a href="about.html" class="text-#c0a060 text-decoration-none">About Us</a></li>
+    </ul>
+  </nav>
+
+ 
+</header>
+
+  <!-- Sidebar Offcanvas -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="sideMenu" aria-labelledby="sideMenuLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="sideMenuLabel">Menu</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="list-unstyled">
+        <li><a href="#" class="d-block py-2 active">Home</a></li>
+        <li><a href="products.html" class="d-block py-2">Products & Menu</a></li>
+        <li><a href="storelocation.html" class="d-block py-2">Store Location</a></li>
+        <li><a href="frenchising.html" class="d-block py-2">Franchising</a></li>
+        <li><a href="catering.html" class="d-block py-2">Catering</a></li>
+        <li><a href="contact.html" class="d-block py-2">Contact</a></li>
+        <li><a href="feedback.html" class="d-block py-2">Feedback</a></li>
+        <li><a href="about.html" class="d-block py-2">About us</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="carousel">
+    <div class="slides">
+      <div class="slide"><img src="crousal image/kaizen-nguy-n-jcLcWL8D7AQ-unsplash.jpg" alt="Orange Juice"></div>
+      <div class="slide"><img src="crousal image/assortment-fruit-juices.jpg" alt="Smoothie"></div>
+      <div class="slide"><img src="crousal image/zlatko-duric-U4QkDQW84sg-unsplash (1).jpg" alt="Fruit Juice"></div>
+    </div>
+
+    <!-- Navigation -->
+    <button class="prev" onclick="moveSlide(-1)">❮</button>
+    <button class="next" onclick="moveSlide(1)">❯</button>
+
+    <!-- Dots -->
+    <div class="dots">
+      <span class="dot" onclick="currentSlide(0)"></span>
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+  </div>
+
+  <!-- Overlay Text -->
+  <div class="hero-text">
+    <h2 style="color: white;">Fresh & Healthy Juice</h2>
+    <p>Made from 100% Natural Fruits</p>
+   <a href="storelocation.html"><button class="btn">Order Now</button></a> 
+  </div>
+</section>
+
+
+<!-- Testimonials -->
+<section class="testimonials">
+  <h2>What Our Customers Say</h2>
+  <div class="testimonial-grid">
+    <div class="testimonial">“The Berry Mix is my favorite! So refreshing.” – Sarah L.</div>
+    <div class="testimonial">“Green Detox gives me so much energy every morning.” – James K.</div>
+    <div class="testimonial">“Best fresh juice in town. Highly recommended!” – Maria P.</div>
+  </div>
+</section>
+
+<!-- Our Story -->
+<section id="our-story" class="py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Text Column -->
+      <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+        <h2 class="mb-3">Our Story</h2>
+        <p>
+          Fresh Juice started with a simple dream to bring nature’s best directly to your glass.
+          We wanted to create a healthier alternative to sugary drinks by focusing on freshness,
+          nutrition, and authentic flavors.
+        </p>
+        <p>
+          From hand-picked fruits sourced from local farms to eco-friendly packaging,
+          every step of our journey is guided by one principle — keeping it natural and fresh.
+        </p>
+        <a href="about.html#our-story" class="btn btn-success">Learn More</a>
+      </div>
+
+      <!-- Image Column -->
+      <div class="col-lg-6 col-md-12 text-center">
+        <img src="shop img/ChatGPT Image Sep 19, 2025, 05_43_49 AM.png" alt="Fresh Fruits" class="img-fluid rounded shadow">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    
+    <!-- Column 1 -->
+    <div class="footer-col">
+      <h3>About Us</h3>
+      <p>
+        Shrek Juice brings you 100% fresh & healthy juices, smoothies, and shakes. 
+        Our mission is to keep you refreshed naturally.
+      </p>
+      <p>
+    Shrek Juice is more than just a juice bar — it’s a lifestyle choice for those who value health, freshness, and great taste. 
+    Since our beginning, we have been committed to serving 100% natural juices, smoothies, protein shakes, and mocktails made 
+    from hand-picked fruits and vegetables.  
+  </p>
+  
+    </div>
+
+    <!-- Column 2 -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <ul class="footer-links">
+         <li><a href="#" class="active">Home</a></li>
+      <li><a href="products.html">Products & Menu</a></li>
+      <li><a href="storelocation.html">Store Location</a></li>
+      <li><a href="frenchising.html">Franchising</a></li>
+      <li><a href="catering.html">Catering</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      <li><a href="about.html">About us</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3 -->
+    <div class="footer-col">
+      <h3>Contact Us</h3>
+      <p><i class="bi bi-geo-alt-fill"></i>
+ Karachi, Pakistan</p>
+      <p><i class="bi bi-telephone-fill"></i> +92 300 1234567</p>
+      <p>✉️ info@juice.com</p>
+    </div>
+
+    <!-- Column 4 -->
+    <div class="footer-col">
+      <h3>Follow Us</h3>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    
+  </div>
+
+  <!-- Bottom -->
+  <div class="footer-bottom">
+    <p>© 2025 JUICE. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+<!-- <script src="script.js"></script> -->
+
+<script>
+  let slideIndex = 0;
+let autoSlide;
+
+function showSlide(index) {
+  const slides = document.querySelectorAll(".slide");
+  const dots = document.querySelectorAll(".dot");
+
+  if (index >= slides.length) slideIndex = 0;
+  if (index < 0) slideIndex = slides.length - 1;
+
+  slides.forEach((slide, i) => {
+    slide.style.display = (i === slideIndex) ? "block" : "none";
+  });
+
+  dots.forEach((dot, i) => {
+    dot.classList.toggle("active", i === slideIndex);
+  });
+}
+
+function moveSlide(n) {
+  slideIndex += n;
+  showSlide(slideIndex);
+  resetAutoSlide();
+}
+
+function currentSlide(n) {
+  slideIndex = n;
+  showSlide(slideIndex);
+  resetAutoSlide();
+}
+
+function startAutoSlide() {
+  autoSlide = setInterval(() => {
+    slideIndex++;
+    showSlide(slideIndex);
+  }, 4000); // 4 seconds
+}
+
+function resetAutoSlide() {
+  clearInterval(autoSlide);
+  startAutoSlide();
+}
+
+// Init
+document.addEventListener("DOMContentLoaded", () => {
+  showSlide(slideIndex);
+  startAutoSlide();
+});
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

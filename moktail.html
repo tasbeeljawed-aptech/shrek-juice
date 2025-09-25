@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHREK JUICE CENTER</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Tumhari custom CSS (yahan tumhari purani file ka link do) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+<header class="d-flex align-items-center justify-content-between p-2 p-lg-3 bg-#2f4f2f">
+  <a href="#" class="text-white fw-bold fs-4 text-decoration-none">
+    <img src="logo/shrek_no_bg.png" alt="" style="height: 60px; width: 60px;">
+  </a>
+
+   <!-- Active Page Name (Mobile Only) -->
+   <div class="d-flex d-lg-none align-items-center w-100 px-3">
+    <!-- Left side -->
+    <span class="text-white fw-bold active">
+      Mocktails
+    </span>
+  
+    <!-- Right side -->
+    <button class="btn btn-outline-light ms-auto" type="button"
+      data-bs-toggle="offcanvas" data-bs-target="#sideMenu" aria-controls="sideMenu">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+
+  <!-- Desktop Nav -->
+  <nav class="d-none d-lg-block">
+    <ul class="d-flex list-unstyled ms-auto">
+      <li class="px-1"><a href="index.html" class="text-c0a060 text-decoration-none">Home</a></li>
+      <li class="px-1"><a href="products.html" class="text-#c0a060 text-decoration-none active">Products & menus</a></li>
+      <li class="px-1"><a href="storelocation.html" class="text-#c0a060 text-decoration-none">Store Location</a></li>
+      <li class="px-1"><a href="frenchising.html" class="text-#c0a060 text-decoration-none">Franchising</a></li>
+      <li class="px-1"><a href="catering.html" class="text-#c0a060 text-decoration-none">Catering</a></li>
+      <li class="px-1"><a href="contact.html" class="text-#c0a060 text-decoration-none">Contact</a></li>
+      <li class="px-1"><a href="feedback.html" class="text-#c0a060 text-decoration-none">Feedback</a></li>
+      <li class="px-1"><a href="about.html" class="text-#c0a060 text-decoration-none">About Us</a></li>
+    </ul>
+  </nav>
+
+  
+</header>
+
+  <!-- Sidebar Offcanvas -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="sideMenu" aria-labelledby="sideMenuLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="sideMenuLabel">Menu</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="list-unstyled">
+        <li><a href="index.html" class="d-block py-2">Home</a></li>
+        <li><a href="products.html" class="d-block py-2 active">Products & Menu</a></li>
+        <li><a href="storelocation.html" class="d-block py-2">Store Location</a></li>
+        <li><a href="frenchising.html" class="d-block py-2">Franchising</a></li>
+        <li><a href="catering.html" class="d-block py-2">Catering</a></li>
+        <li><a href="contact.html" class="d-block py-2">Contact</a></li>
+        <li><a href="feedback.html" class="d-block py-2">Feedback</a></li>
+        <li><a href="about.html" class="d-block py-2">About us</a></li>
+      </ul>
+    </div>
+  </div>
+    <!-- product card -->
+    <!-- <h1>Mocktails</h1> -->
+     <!-- Blurry Background Section -->
+<section class="blur-hero">
+  <div class="blur-bg"></div>
+  <div class="blur-content">
+    <h1>Mocktails</h1>
+    <p>Fresh • Healthy • Natural</p>
+  </div>
+</section>
+    <!-- Cards -->
+ <div class="container my-5">
+  <div class="row g-4">
+
+    <div class="col-md-4 col-sm-6">
+      <div class="card h-100 text-center">
+        <img src="mocktail img/Sparkling Sunset Mocktail.jpg" class="card-img-top" alt="Sparkling Sunset">
+        <div class="card-body">
+          <h5 class="card-title">Sparkling Sunset</h5>
+          <p class="price">$4.50</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sparklingSunsetModal">
+            View Details
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-sm-6">
+      <div class="card h-100 text-center">
+        <img src="mocktail img/Tropical Breeze Mocktail.jpg" class="card-img-top" alt="Tropical Breeze">
+        <div class="card-body">
+          <h5 class="card-title">Tropical Breeze</h5>
+          <p class="price">$5.00</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tropicalBreezeModal">
+            View Details
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-sm-6">
+      <div class="card h-100 text-center">
+        <img src="mocktail img/Virgin Mojito Twist Mocktails.jpg" class="card-img-top" alt="Virgin Mojito Twist">
+        <div class="card-body">
+          <h5 class="card-title">Virgin Mojito Twist</h5>
+          <p class="price">$4.00</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#virginMojitoTwistModal">
+            View Details
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-sm-6">
+      <div class="card h-100 text-center">
+        <img src="mocktail img/Berry Bliss Mocktails.jpg" class="card-img-top" alt="Berry Bliss">
+        <div class="card-body">
+          <h5 class="card-title">Berry Bliss</h5>
+          <p class="price">$4.80</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#berryBlissModal">
+            View Details
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-sm-6">
+      <div class="card h-100 text-center">
+        <img src="mocktail img/Mango Mule Mocktail.jpg" class="card-img-top" alt="Citrus Fizz">
+        <div class="card-body">
+          <h5 class="card-title">Citrus Fizz</h5>
+          <p class="price">$4.20</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#citrusFizzModal">
+            View Details
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-sm-6">
+      <div class="card h-100 text-center">
+        <img src="mocktail img/Pineapple Cooler Mocktails.jpg" class="card-img-top" alt="Pineapple Cooler">
+        <div class="card-body">
+          <h5 class="card-title">Pineapple Cooler</h5>
+          <p class="price">$4.70</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pineappleCoolerModal">
+            View Details
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Previous Button -->
+<div class="previous-btn">
+  <button onclick="history.back()">⬅ Previous</button>
+</div>
+
+
+
+  <!-- Modals (Separate) -->
+ <!-- Sparkling Sunset Modal -->
+<div class="modal fade" id="sparklingSunsetModal" tabindex="-1" aria-labelledby="sparklingSunsetModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="row g-0">
+        <div class="col-md-5">
+          <img src="mocktail img/Sparkling Sunset Mocktail.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="Sparkling Sunset">
+        </div>
+        <div class="col-md-7">
+          <div class="modal-header">
+            <h5 class="modal-title" id="sparklingSunsetModalLabel">Sparkling Sunset</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Description</h6>
+            <p>A refreshing blend of citrus and sparkling soda that captures the colors of the sunset in every sip.</p>
+            <div class="price fw-bold">$4.99</div>
+          </div>
+          <div class="modal-footer">
+            <a href="storelocation.html" class="btn btn-success">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Tropical Breeze Modal -->
+<div class="modal fade" id="tropicalBreezeModal" tabindex="-1" aria-labelledby="tropicalBreezeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="row g-0">
+        <div class="col-md-5">
+          <img src="mocktail img/Tropical Breeze Mocktail.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="Tropical Breeze">
+        </div>
+        <div class="col-md-7">
+          <div class="modal-header">
+            <h5 class="modal-title" id="tropicalBreezeModalLabel">Tropical Breeze</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Description</h6>
+            <p>A light and fruity mix of tropical flavors that feels like a cool breeze on a sunny island.</p>
+            <div class="price fw-bold">$4.79</div>
+          </div>
+          <div class="modal-footer">
+            <a href="storelocation.html" class="btn btn-success">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Virgin Mojito Twist Modal -->
+<div class="modal fade" id="virginMojitoTwistModal" tabindex="-1" aria-labelledby="virginMojitoTwistModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="row g-0">
+        <div class="col-md-5">
+          <img src="mocktail img/Virgin Mojito Twist Mocktails.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="Virgin Mojito Twist">
+        </div>
+        <div class="col-md-7">
+          <div class="modal-header">
+            <h5 class="modal-title" id="virginMojitoTwistModalLabel">Virgin Mojito Twist</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Description</h6>
+            <p>A zesty combination of mint, lime, and soda with a refreshing twist of coolness.</p>
+            <div class="price fw-bold">$4.59</div>
+          </div>
+          <div class="modal-footer">
+            <a href="storelocation.html" class="btn btn-success">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Berry Bliss Modal -->
+<div class="modal fade" id="berryBlissModal" tabindex="-1" aria-labelledby="berryBlissModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="row g-0">
+        <div class="col-md-5">
+          <img src="mocktail img/Berry Bliss Mocktails.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="Berry Bliss">
+        </div>
+        <div class="col-md-7">
+          <div class="modal-header">
+            <h5 class="modal-title" id="berryBlissModalLabel">Berry Bliss</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Description</h6>
+            <p>A sweet and tangy mocktail made with mixed berries and a splash of fizz.</p>
+            <div class="price fw-bold">$4.89</div>
+          </div>
+          <div class="modal-footer">
+            <a href="storelocation.html" class="btn btn-success">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Citrus Fizz Modal -->
+<div class="modal fade" id="citrusFizzModal" tabindex="-1" aria-labelledby="citrusFizzModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="row g-0">
+        <div class="col-md-5">
+          <img src="mocktail img/Mango Mule Mocktail.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="Citrus Fizz">
+        </div>
+        <div class="col-md-7">
+          <div class="modal-header">
+            <h5 class="modal-title" id="citrusFizzModalLabel">Citrus Fizz</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Description</h6>
+            <p>A bubbly citrus mocktail with lemon, lime, and orange for a sparkling burst of freshness.</p>
+            <div class="price fw-bold">$4.69</div>
+          </div>
+          <div class="modal-footer">
+            <a href="storelocation.html" class="btn btn-success">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Pineapple Cooler Modal -->
+<div class="modal fade" id="pineappleCoolerModal" tabindex="-1" aria-labelledby="pineappleCoolerModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="row g-0">
+        <div class="col-md-5">
+          <img src="mocktail img/Pineapple Cooler Mocktails.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="Pineapple Cooler">
+        </div>
+        <div class="col-md-7">
+          <div class="modal-header">
+            <h5 class="modal-title" id="pineappleCoolerModalLabel">Pineapple Cooler</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Description</h6>
+            <p>A chilled pineapple-based mocktail that’s tropical, tangy, and incredibly refreshing.</p>
+            <div class="price fw-bold">$4.79</div>
+          </div>
+          <div class="modal-footer">
+            <a href="storelocation.html" class="btn btn-success">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+      <!-- Footer -->
+    <footer class="footer">
+  <div class="footer-container">
+    
+    <!-- Column 1 -->
+    <div class="footer-col">
+      <h3>About Us</h3>
+      <p>
+        Shrek Juice brings you 100% fresh & healthy juices, smoothies, and shakes. 
+        Our mission is to keep you refreshed naturally.
+      </p>
+      <p>
+    Shrek Juice is more than just a juice bar — it’s a lifestyle choice for those who value health, freshness, and great taste. 
+    Since our beginning, we have been committed to serving 100% natural juices, smoothies, protein shakes, and mocktails made 
+    from hand-picked fruits and vegetables.  
+  </p>
+  
+    </div>
+
+    <!-- Column 2 -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <ul class="footer-links">
+         <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products & Menu</a></li>
+      <li><a href="storelocation.html">Store Location</a></li>
+      <li><a href="frenchising.html">Franchising</a></li>
+      <li><a href="catering.html">Catering</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      <li><a href="about.html">About us</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3 -->
+    <div class="footer-col">
+      <h3>Contact Us</h3>
+      <p><i class="bi bi-geo-alt-fill"></i>
+ Karachi, Pakistan</p>
+      <p><i class="bi bi-telephone-fill"></i> +92 300 1234567</p>
+      <p>✉️ info@juice.com</p>
+    </div>
+
+    <!-- Column 4 -->
+    <div class="footer-col">
+      <h3>Follow Us</h3>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    
+  </div>
+
+  <!-- Bottom -->
+  <div class="footer-bottom">
+    <p>© 2025 JUICE. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+    function openModal(id) {
+      document.getElementById(id).classList.add('active');
+    }
+    function closeModal(id) {
+      document.getElementById(id).classList.remove('active');
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

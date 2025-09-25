@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHREK JUICE CENTER</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Tumhari custom CSS (yahan tumhari purani file ka link do) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+<header class="d-flex align-items-center justify-content-between p-2 p-lg-3 bg-#2f4f2f">
+  <a href="#" class="text-white fw-bold fs-4 text-decoration-none">
+    <img src="logo/shrek_no_bg.png" alt="" style="height: 60px; width: 60px;">
+  </a>
+
+  <!-- Active Page Name (Mobile Only) -->
+  <div class="d-flex d-lg-none align-items-center w-100 px-3">
+    <!-- Left side -->
+    <span class="text-white fw-bold active">
+      Protien shakes
+    </span>
+  
+    <!-- Right side -->
+    <button class="btn btn-outline-light ms-auto" type="button"
+      data-bs-toggle="offcanvas" data-bs-target="#sideMenu" aria-controls="sideMenu">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+
+  <!-- Desktop Nav -->
+  <nav class="d-none d-lg-block">
+    <ul class="d-flex list-unstyled ms-auto">
+      <li class="px-1"><a href="index.html" class="text-c0a060 text-decoration-none">Home</a></li>
+      <li class="px-1"><a href="products.html" class="text-#c0a060 text-decoration-none active">Products & menus</a></li>
+      <li class="px-1"><a href="storelocation.html" class="text-#c0a060 text-decoration-none">Store Location</a></li>
+      <li class="px-1"><a href="frenchising.html" class="text-#c0a060 text-decoration-none">Franchising</a></li>
+      <li class="px-1"><a href="catering.html" class="text-#c0a060 text-decoration-none">Catering</a></li>
+      <li class="px-1"><a href="contact.html" class="text-#c0a060 text-decoration-none">Contact</a></li>
+      <li class="px-1"><a href="feedback.html" class="text-#c0a060 text-decoration-none">Feedback</a></li>
+      <li class="px-1"><a href="about.html" class="text-#c0a060 text-decoration-none">About Us</a></li>
+    </ul>
+  </nav>
+
+ 
+</header>
+
+  <!-- Sidebar Offcanvas -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="sideMenu" aria-labelledby="sideMenuLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="sideMenuLabel">Menu</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="list-unstyled">
+        <li><a href="index.html" class="d-block py-2 ">Home</a></li>
+        <li><a href="products.html" class="d-block py-2 active">Products & Menu</a></li>
+        <li><a href="storelocation.html" class="d-block py-2">Store Location</a></li>
+        <li><a href="frenchising.html" class="d-block py-2">Franchising</a></li>
+        <li><a href="catering.html" class="d-block py-2">Catering</a></li>
+        <li><a href="contact.html" class="d-block py-2">Contact</a></li>
+        <li><a href="feedback.html" class="d-block py-2">Feedback</a></li>
+        <li><a href="about.html" class="d-block py-2">About us</a></li>
+      </ul>
+    </div>
+  </div>
+
+    <!-- product card -->
+      <!-- <h1>💪 Protein Shakes</h1> -->
+       <!-- Blurry Background Section -->
+<section class="blur-hero">
+  <div class="blur-bg"></div>
+  <div class="blur-content">
+    <h1>Protein Shakes</h1>
+    <p>Fresh • Healthy • Natural</p>
+  </div>
+</section>
+
+   <div class="container my-5">
+  <!-- <h1 class="text-center mb-4">💪 Protein Shakes</h1> -->
+
+  <div class="row g-4">
+    <!-- PureProtein -->
+    <div class="col-12 col-sm-6 col-lg-4">
+      <div class="card h-100 text-center">
+        <img src="protien img/Chocolate Dream Shakes.png" class="card-img-top" alt="PureProtein">
+        <div class="card-body">
+          <h2 class="card-title h5">PureProtein</h2>
+          <div class="price mb-2">$7.99</div>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pureProteinModal">
+            View Details
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- NatureFuel -->
+    <div class="col-12 col-sm-6 col-lg-4">
+      <div class="card h-100 text-center">
+        <img src="protien img/Cookies & Cream Shakes.png" class="card-img-top" alt="NatureFuel">
+        <div class="card-body">
+          <h2 class="card-title h5">NatureFuel</h2>
+          <div class="price mb-2">$8.49</div>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#natureFuelModal">
+            View Details
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- GreenGain -->
+    <div class="col-12 col-sm-6 col-lg-4">
+      <div class="card h-100 text-center">
+        <img src="protien img/GreenGain shakes.png" class="card-img-top" alt="GreenGain">
+        <div class="card-body">
+          <h2 class="card-title h5">GreenGain</h2>
+          <div class="price mb-2">$8.99</div>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#greenGainModal">
+            View Details
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- VitalBlend -->
+    <div class="col-12 col-sm-6 col-lg-4">
+      <div class="card h-100 text-center">
+        <img src="protien img/Peanut Butter Power Shakes.png" class="card-img-top" alt="VitalBlend">
+        <div class="card-body">
+          <h2 class="card-title h5">VitalBlend</h2>
+          <div class="price mb-2">$9.29</div>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#vitalBlendModal">
+            View Details
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- EarthProtein -->
+    <div class="col-12 col-sm-6 col-lg-4">
+      <div class="card h-100 text-center">
+        <img src="protien img/Ogre's Green Machine Shakes.png" class="card-img-top" alt="EarthProtein">
+        <div class="card-body">
+          <h2 class="card-title h5">EarthProtein</h2>
+          <div class="price mb-2">$9.49</div>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#earthProteinModal">
+            View Details
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Previous Button -->
+<div class="previous-btn">
+  <button onclick="history.back()">⬅ Previous</button>
+</div>
+
+
+  <!-- Modals -->
+ <!-- PureProtein Modal -->
+<div class="modal fade" id="pureProteinModal" tabindex="-1" aria-labelledby="pureProteinModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="row g-0">
+        <div class="col-md-5">
+          <img src="protien img/Chocolate Dream Shakes.png" class="img-fluid h-100 w-100 object-fit-cover" alt="PureProtein">
+        </div>
+        <div class="col-md-7">
+          <div class="modal-header">
+            <h5 class="modal-title" id="pureProteinModalLabel">PureProtein</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Description</h6>
+            <p>
+              Packed with high-quality whey protein, PureProtein shake is designed to support muscle growth and recovery. Smooth, creamy, and perfect post-workout.
+            </p>
+            <div class="price fw-bold">$6.49</div>
+          </div>
+          <div class="modal-footer">
+            <a href="storelocation.html" class="btn btn-success">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- NatureFuel Modal -->
+<div class="modal fade" id="natureFuelModal" tabindex="-1" aria-labelledby="natureFuelModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="row g-0">
+        <div class="col-md-5">
+          <img src="protien img/Cookies & Cream Shakes.png" class="img-fluid h-100 w-100 object-fit-cover" alt="NatureFuel">
+        </div>
+        <div class="col-md-7">
+          <div class="modal-header">
+            <h5 class="modal-title" id="natureFuelModalLabel">NatureFuel</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Description</h6>
+            <p>
+              A natural blend of plant-based proteins and superfoods. NatureFuel gives you clean energy and keeps you fueled throughout the day.
+            </p>
+            <div class="price fw-bold">$6.99</div>
+          </div>
+          <div class="modal-footer">
+            <a href="storelocation.html" class="btn btn-success">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- GreenGain Modal -->
+<div class="modal fade" id="greenGainModal" tabindex="-1" aria-labelledby="greenGainModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="row g-0">
+        <div class="col-md-5">
+          <img src="protien img/GreenGain shakes.png" class="img-fluid h-100 w-100 object-fit-cover" alt="GreenGain">
+        </div>
+        <div class="col-md-7">
+          <div class="modal-header">
+            <h5 class="modal-title" id="greenGainModalLabel">GreenGain</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Description</h6>
+            <p>
+              Made with spinach, kale, and pea protein, GreenGain is the ultimate green protein shake. A powerhouse of vitamins, minerals, and plant-based strength.
+            </p>
+            <div class="price fw-bold">$7.29</div>
+          </div>
+          <div class="modal-footer">
+            <a href="storelocation.html" class="btn btn-success">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- VitalBlend Modal -->
+<div class="modal fade" id="vitalBlendModal" tabindex="-1" aria-labelledby="vitalBlendModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="row g-0">
+        <div class="col-md-5">
+          <img src="protien img/Peanut Butter Power Shakes.png" class="img-fluid h-100 w-100 object-fit-cover" alt="VitalBlend">
+        </div>
+        <div class="col-md-7">
+          <div class="modal-header">
+            <h5 class="modal-title" id="vitalBlendModalLabel">VitalBlend</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Description</h6>
+            <p>
+              A balanced mix of proteins, vitamins, and minerals. VitalBlend is ideal for daily nutrition and maintaining a healthy lifestyle.
+            </p>
+            <div class="price fw-bold">$6.79</div>
+          </div>
+          <div class="modal-footer">
+            <a href="storelocation.html" class="btn btn-success">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- EarthProtein Modal -->
+<div class="modal fade" id="earthProteinModal" tabindex="-1" aria-labelledby="earthProteinModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="row g-0">
+        <div class="col-md-5">
+          <img src="protien img/Ogre's Green Machine Shakes.png" class="img-fluid h-100 w-100 object-fit-cover" alt="EarthProtein">
+        </div>
+        <div class="col-md-7">
+          <div class="modal-header">
+            <h5 class="modal-title" id="earthProteinModalLabel">EarthProtein</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Description</h6>
+            <p>
+              EarthProtein is crafted with organic, earthy ingredients like hemp, chia, and brown rice protein. A wholesome shake for natural energy and wellness.
+            </p>
+            <div class="price fw-bold">$7.49</div>
+          </div>
+          <div class="modal-footer">
+            <a href="storelocation.html" class="btn btn-success">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      <!-- Footer -->
+   <footer class="footer">
+  <div class="footer-container">
+    
+    <!-- Column 1 -->
+    <div class="footer-col">
+      <h3>About Us</h3>
+      <p>
+        Shrek Juice brings you 100% fresh & healthy juices, smoothies, and shakes. 
+        Our mission is to keep you refreshed naturally.
+      </p>
+      <p>
+    Shrek Juice is more than just a juice bar — it’s a lifestyle choice for those who value health, freshness, and great taste. 
+    Since our beginning, we have been committed to serving 100% natural juices, smoothies, protein shakes, and mocktails made 
+    from hand-picked fruits and vegetables.  
+  </p>
+  
+    </div>
+
+    <!-- Column 2 -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <ul class="footer-links">
+         <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products & Menu</a></li>
+      <li><a href="storelocation.html">Store Location</a></li>
+      <li><a href="frenchising.html">Franchising</a></li>
+      <li><a href="catering.html">Catering</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      <li><a href="about.html">About us</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3 -->
+    <div class="footer-col">
+      <h3>Contact Us</h3>
+      <p><i class="bi bi-geo-alt-fill"></i>
+ Karachi, Pakistan</p>
+      <p><i class="bi bi-telephone-fill"></i> +92 300 1234567</p>
+      <p>✉️ info@juice.com</p>
+    </div>
+
+    <!-- Column 4 -->
+    <div class="footer-col">
+      <h3>Follow Us</h3>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    
+  </div>
+
+  <!-- Bottom -->
+  <div class="footer-bottom">
+    <p>© 2025 JUICE. All rights reserved.</p>
+  </div>
+</footer>
+
+
+<script>
+    function openModal(id) {
+      document.getElementById(id).classList.add("active");
+    }
+    function closeModal(id) {
+      document.getElementById(id).classList.remove("active");
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
